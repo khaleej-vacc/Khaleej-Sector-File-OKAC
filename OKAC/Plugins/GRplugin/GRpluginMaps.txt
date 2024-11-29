@@ -1,5 +1,5 @@
-//&preserve File created for the Arabian vACC - U.A.E FIR (OMAE)
-//&preserve Developed and maintained by the Arabian vACC Operations Department
+//&preserve File created for the Khaleej vACC - OKKK FIR 
+//&preserve Developed and maintained by the Khaleej vACC Operations Department
 //&preserve
 //&preserve To be used on the VATSIM Network only
 
