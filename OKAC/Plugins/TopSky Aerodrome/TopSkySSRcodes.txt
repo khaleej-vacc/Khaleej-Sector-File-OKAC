@@ -1,0 +1,27 @@
+// International
+RANGE:1400:1477
+ADEP:OK
+NOTADES:OK
+IFR
+VFR
+
+// Domestic
+RANGE:0601:0677
+ADEP:OK
+ADES:OK
+IFR
+VFR
+
+// Area Control Centre Arrivals
+RANGE:1400:1477
+NOTADEP:OK
+ADES:OK
+IFR
+VFR
+
+// Area Control Centre Transit
+RANGE:1400:1477
+NOTADEP:OK
+NOTADES:OK
+IFR
+VFR

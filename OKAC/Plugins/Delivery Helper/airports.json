@@ -1,0 +1,174 @@
+{
+  "OKKK": {
+    "elevation": 205,
+    "sids": {
+      "ALVAX": {
+        "cfl": 4000,
+        "rwys": {
+          "15L": {
+            "jet_dep": "ALVAX4E",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "ALVAX4E",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "ALVAX4F",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "ALVAX4F",
+            "cfl": 4000
+          }
+        }
+      },
+      "ASVIR": {
+        "rwys": {
+          "15L": {
+            "jet_dep": "ASVIR4E",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "ASVIR4E",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "ASVIR4F",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "ASVIR4F",
+            "cfl": 4000
+          }
+        }
+      },
+      "BOXIK": {
+        "cfl": 4000,
+        "rwys": {
+          "15L": {
+            "jet_dep": "BOXIK4E",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "BOXIK4E",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "BOXIK4F",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "BOXIK4F",
+            "cfl": 4000
+          }
+        }
+      },
+      "RALKA": {
+        "cfl": 4000, 
+        "rwys": {
+          "15L": {
+            "jet_dep": "RALKA4E",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "RALKA4E",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "RALKA4F",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "RALKA4F",
+            "cfl": 4000
+          }
+        }
+      },
+      "SESRU": {
+        "cfl": 4000,
+        "rwys": {
+          "15L": {
+            "jet_dep": "SESRU4E",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "SESRU4E",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "SESRU4F",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "SESRU4F",
+            "cfl": 4000
+          }
+        }
+      },
+      "NIDAP": {
+        "cfl": 4000, 
+        "rwys": {
+          "15L": {
+            "jet_dep": "KFR4ExNIDAP",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "KFR4ExNIDAP",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "KFR4FxNIDAP",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "KFR4FxNIDAP",
+            "cfl": 4000
+          }
+        }
+      },
+      "KATOD": {
+        "cfl": 4000, 
+        "rwys": {
+          "15L": {
+            "jet_dep": "KFR4ExKATOD",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "KFR4ExKATOD",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "KFR4FxKATOD",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "KFR4FxKATOD",
+            "cfl": 4000
+          }
+        }
+      },
+      "DEKOB": {
+        "cfl": 4000, 
+        "rwys": {
+          "15L": {
+            "jet_dep": "KFR4ExDEKOB",
+            "cfl": 4000
+          },
+          "15R": {
+            "jet_dep": "KFR4ExDEKOB",
+            "cfl": 4000
+          },
+          "33R": {
+            "jet_dep": "KFR4FxDEKOB",
+            "cfl": 4000
+          },
+          "33L": {
+            "jet_dep": "KFR4FxDEKOB",
+            "cfl": 4000
+          }
+        }
+      }
+    }
+  }
+}

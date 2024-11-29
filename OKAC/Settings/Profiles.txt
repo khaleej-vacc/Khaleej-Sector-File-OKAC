@@ -1,0 +1,18 @@
+PROFILE
+PROFILE:[INITIALS]_OBS:100:0
+ATIS2:Kuwait Observer
+ATIS3:
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKKK_DEL:10:2
+ATIS2:Kuwait Delivery
+ATIS3:Request clearance 10 minutes before departure.
+ATIS4:How is my driving? Tell me at vats.im/khljfdb
+PROFILE:OKKK_GND:20:3
+ATIS2:Kuwait Ground
+ATIS3:Covering the Kuwait GMC
+ATIS4:How is my driving? Tell me at vats.im/khljfdb
+PROFILE:OKKK_TWR:40:4
+ATIS2:Kuwait Tower
+ATIS3:Covering the Kuwait CTR
+ATIS4:How is my driving? Tell me at vats.im/khljfdb
+END
