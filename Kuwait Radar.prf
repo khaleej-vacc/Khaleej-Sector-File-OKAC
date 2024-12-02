@@ -82,3 +82,13 @@ Plugins	Plugin9	\OKAC\Plugins\PushbackFlorian_v1.1.1\PushbackFlorian.dll
 Plugins	Plugin9Display0	Ground Radar display
 Plugins	Plugin9Display1	DelHel
 Plugins	Plugin9Display2	Standard ES radar screen
+LastSession	connecttype	0
+LastSession	callsign	[INITIALS]_OBS
+LastSession	facility	0
+LastSession	rating	0
+LastSession	tovatsim	1
+LastSession	atis2	Kuwait Observer
+LastSession	atis4	Welcome to Kuwait | Visit khaleejvacc.net
+LastSession	range	100
+LastSession	proxyserver	localhost
+LastSession	simdatapublish	0
