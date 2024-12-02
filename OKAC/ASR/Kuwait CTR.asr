@@ -1,8 +1,8 @@
-DisplayTypeName:Ground Radar display
+DisplayTypeName:Standard ES radar screen
 DisplayTypeNeedRadarContent:0
 DisplayTypeGeoReferenced:1
-SECTORFILE:C:\Users\ismai\Downloads\OKAC Development Sector Files\OKAC-Install-Package_20240630114923-240601-0001.sct
-SECTORTITLE:OKAC-Install-Package_20240630114923-240601-0001.sct
+SECTORFILE:
+SECTORTITLE:
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -17,4 +17,3 @@ DISABLEZOOMING:0
 DisplayRotation:0.00000
 TAGFAMILY:TopSky
 WINDOWAREA:28.988590:47.481673:29.503667:48.468277
-PLUGIN:Ground Radar plugin:TowerMode:OKKK
