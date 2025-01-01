@@ -3,170 +3,170 @@
     "elevation": 205,
     "sids": {
       "ALVAX": {
-        "cfl": 15000,
+        "cfl": 4000,
         "rwys": {
           "15L": {
             "jet_dep": "ALVAX4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "ALVAX4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "ALVAX4F",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "ALVAX4F",
-            "cfl": 15000
+            "cfl": 4000
           }
         }
       },
       "ASVIR": {
-        "cfl": 15000,
+        "cfl": 4000,
         "rwys": {
           "15L": {
             "jet_dep": "ASVIR4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "ASVIR4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "ASVIR4F",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "ASVIR4F",
-            "cfl": 15000
+            "cfl": 4000
           }
         }
       },
       "BOXIK": {
-        "cfl": 15000,
+        "cfl": 4000,
         "rwys": {
           "15L": {
             "jet_dep": "BOXIK4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "BOXIK4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "BOXIK4F",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "BOXIK4F",
-            "cfl": 15000
+            "cfl": 4000
           }
         }
       },
       "RALKA": {
-        "cfl": 18000, 
+        "cfl": 4000, 
         "rwys": {
           "15L": {
             "jet_dep": "RALKA4E",
-            "cfl": 18000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "RALKA4E",
-            "cfl": 18000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "RALKA4F",
-            "cfl": 18000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "RALKA4F",
-            "cfl": 18000
+            "cfl": 4000
           }
         }
       },
       "SESRU": {
-        "cfl": 15000,
+        "cfl": 4000,
         "rwys": {
           "15L": {
             "jet_dep": "SESRU4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "SESRU4E",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "SESRU4F",
-            "cfl": 15000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "SESRU4F",
-            "cfl": 15000
+            "cfl": 4000
           }
         }
       },
       "NIDAP": {
-        "cfl": 22000, 
+        "cfl": 4000, 
         "rwys": {
           "15L": {
             "jet_dep": "KFR4ExNIDAP",
-            "cfl": 22000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "KFR4ExNIDAP",
-            "cfl": 22000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "KFR4FxNIDAP",
-            "cfl": 22000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "KFR4FxNIDAP",
-            "cfl": 22000
+            "cfl": 4000
           }
         }
       },
       "KATOD": {
-        "cfl": 18000, 
+        "cfl": 4000, 
         "rwys": {
           "15L": {
             "jet_dep": "KFR4ExKATOD",
-            "cfl": 18000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "KFR4ExKATOD",
-            "cfl": 18000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "KFR4FxKATOD",
-            "cfl": 18000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "KFR4FxKATOD",
-            "cfl": 18000
+            "cfl": 4000
           }
         }
       },
       "DEKOB": {
-        "cfl": 20000, 
+        "cfl": 4000, 
         "rwys": {
           "15L": {
             "jet_dep": "KFR4ExDEKOB",
-            "cfl": 20000
+            "cfl": 4000
           },
           "15R": {
             "jet_dep": "KFR4ExDEKOB",
-            "cfl": 20000
+            "cfl": 4000
           },
           "33R": {
             "jet_dep": "KFR4FxDEKOB",
-            "cfl": 20000
+            "cfl": 4000
           },
           "33L": {
             "jet_dep": "KFR4FxDEKOB",
-            "cfl": 20000
+            "cfl": 4000
           }
         }
       }
