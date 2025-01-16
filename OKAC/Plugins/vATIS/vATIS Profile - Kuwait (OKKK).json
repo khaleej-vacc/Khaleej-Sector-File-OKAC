@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "Kuwait (OKKK)",
-  "id": "3c1784b1-462e-4b56-b498-577b9677f0e7",
+  "id": "209cee0d-1015-4ce0-9e1c-5657e0c7d70a",
   "stations": [
     {
       "id": "1db1877a-a954-43a1-9dbd-bff5d092eb12",
@@ -304,6 +304,12 @@
             "voice": "TRANSITION LEVEL {trl}"
           }
         },
+        "notams": {
+          "template": {
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+          }
+        },
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
@@ -316,7 +322,6 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 126225000,
       "idsEndpoint": "",
-      "useNotamPrefix": true,
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
@@ -334,7 +339,7 @@
         {
           "id": "e4adfa89-a0cf-4eac-b7f9-fd0d24d40016",
           "name": "33L/DEP | 33R/ARR",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33L, ARRIVAL RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS].",
+          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33L, ARRIVAL RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -350,7 +355,7 @@
         {
           "id": "a63066be-20bb-4646-b373-a3e90e530e4c",
           "name": "15R/DEP | 15L/ARR",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15R, ARRIVAL RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS].",
+          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15R, ARRIVAL RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -366,7 +371,7 @@
         {
           "id": "105a4b77-ebd6-45e6-829d-451349e66bfb",
           "name": "33 DUAL RWY CONFIG",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DUAL RUNWAYS IN USE 33L AND 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS].",
+          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DUAL RUNWAYS IN USE 33L AND 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -382,7 +387,7 @@
         {
           "id": "8bd59e84-7994-4988-8862-7aa0b384eb49",
           "name": "33R SRO",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33R, ARRIVAL RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 33R. RWY 33L CLSD.",
+          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33R, ARRIVAL RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 33R. RWY 33L CLSD. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -390,7 +395,7 @@
         {
           "id": "1641a344-0ff4-47f2-a3e6-b012a4c7d470",
           "name": "15L SRO",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15L, ARRIVAL RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 15L. RWY 15R CLSD.",
+          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15L, ARRIVAL RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 15L. RWY 15R CLSD. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
