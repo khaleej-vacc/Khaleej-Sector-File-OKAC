@@ -331,7 +331,7 @@
         {
           "id": "03eff99f-c9be-4209-9338-867ca04e82aa",
           "name": "15L/DEP | 15R/ARR",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME].\r\nDEPARTURE RWY 15L, ARRIVAL RWY 15R.\r\n[ARPT_COND] [NOTAMS].\r\nSFC WIND [SURFACE_WIND].\r\nVIS [VIS].\r\nT [TEMP].\r\nDP [DEW].\r\nQNH [PRESSURE] HPA.\r\n[PRESENT_WX].\r\n[CLOUDS].",
+          "template": "[FACILITY] ATIS [ATIS_CODE]. TIME [TIME].\r\n@ARR RWY 15R, @DEP RWY 15L.\r\n[ARPT_COND] [NOTAMS].\r\nWIND [SURFACE_WIND].\r\nVIS [VIS].\r\nT [TEMP].\r\nDP [DEW].\r\nQNH [PRESSURE] HPA.\r\n[PRESENT_WX].\r\n[CLOUDS].",
           "externalGenerator": {
             "enabled": false
           }
@@ -339,7 +339,7 @@
         {
           "id": "e4adfa89-a0cf-4eac-b7f9-fd0d24d40016",
           "name": "33L/DEP | 33R/ARR",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33L, ARRIVAL RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. @ARR RWY 33R, @DEP RWY 33L. [ARPT_COND] [NOTAMS]. WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. @TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -347,7 +347,7 @@
         {
           "id": "719ddf29-e7a7-420d-ab42-40a0fd48911c",
           "name": "33R/DEP | 33L/ARR",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33R, ARRIVAL RWY 33L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS].",
+          "template": "[FACILITY] ATIS [ATIS_CODE]. TIME [TIME]. @ARR RWY 33L, @DEP RWY 33R. [ARPT_COND] [NOTAMS]. WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS].",
           "externalGenerator": {
             "enabled": false
           }
@@ -355,7 +355,7 @@
         {
           "id": "a63066be-20bb-4646-b373-a3e90e530e4c",
           "name": "15R/DEP | 15L/ARR",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15R, ARRIVAL RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. @ARR RWY 15L, @DEP RWY 15R. [ARPT_COND] [NOTAMS]. WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. @TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -363,7 +363,7 @@
         {
           "id": "c306ecaf-3425-4e98-9f3a-310980ad8fff",
           "name": "15 DUAL RWY CONFIG",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DUAL RUNWAYS IN USE 15L AND 15R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS].",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. DUAL RUNWAYS IN USE 15L AND 15R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. @TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -371,7 +371,7 @@
         {
           "id": "105a4b77-ebd6-45e6-829d-451349e66bfb",
           "name": "33 DUAL RWY CONFIG",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DUAL RUNWAYS IN USE 33L AND 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. DUAL RUNWAYS IN USE 33L AND 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. @TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -379,7 +379,7 @@
         {
           "id": "4debb69e-c7b9-4d3a-80e7-6d911f7e0ebe",
           "name": "33L SRO",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33L, ARRIVAL RWY 33L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 33L. RWY 33R CLSD.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. @ARR RWY 33L, @DEP RWY 33L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 33L. RWY 33R CLSD.",
           "externalGenerator": {
             "enabled": false
           }
@@ -387,7 +387,7 @@
         {
           "id": "8bd59e84-7994-4988-8862-7aa0b384eb49",
           "name": "33R SRO",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 33R, ARRIVAL RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 33R. RWY 33L CLSD. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. @ARR RWY 33R, @DEP RWY 33R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 33R. RWY 33L CLSD. @TWYS  @E3 , @E4 AND @E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -395,7 +395,7 @@
         {
           "id": "1641a344-0ff4-47f2-a3e6-b012a4c7d470",
           "name": "15L SRO",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15L, ARRIVAL RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 15L. RWY 15R CLSD. TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. @ARR RWY 15L, @DEP RWY 15L. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 15L. RWY 15R CLSD. @TWYS  E3 , E4 AND E5 OUT OF SERVICE AND  COMPLETELY  WITHDRAWN.",
           "externalGenerator": {
             "enabled": false
           }
@@ -403,13 +403,34 @@
         {
           "id": "330808ca-d07e-4d57-a1c7-15ad33b37805",
           "name": "15R SRO",
-          "template": "KUWAIT ATIS [ATIS_CODE]. TIME [TIME]. DEPARTURE RWY 15R, ARRIVAL RWY 15R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 15R. RWY 15L CLSD.",
+          "template": "[FACILITY] [ATIS_CODE]. TIME [TIME]. ARR RWY 15R, DEP RWY 15R. [ARPT_COND] [NOTAMS]. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. SINGLE RWY OPS IN PROG RWY 15R. RWY 15L CLSD.",
           "externalGenerator": {
             "enabled": false
           }
         }
       ],
-      "contractions": [],
+      "contractions": [
+        {
+          "variableName": "ARR",
+          "text": "ARR",
+          "voice": "ARRIVAL"
+        },
+        {
+          "variableName": "DEP",
+          "text": "DEP",
+          "voice": "DEPARTURE"
+        },
+        {
+          "variableName": "E",
+          "text": "E",
+          "voice": "ECHO"
+        },
+        {
+          "variableName": "TWYS",
+          "text": "TWYS",
+          "voice": "TAXIWAYS"
+        }
+      ],
       "airportConditionDefinitions": [],
       "notamDefinitions": [
         {
