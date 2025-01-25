@@ -20,7 +20,7 @@
           }
         },
         "surfaceWind": {
-          "speakLeadingZero": false,
+          "speakLeadingZero": true,
           "magneticVariation": {
             "enabled": false,
             "magneticDegrees": 0
@@ -276,7 +276,7 @@
         },
         "temperature": {
           "usePlusPrefix": false,
-          "speakLeadingZero": false,
+          "speakLeadingZero": true,
           "template": {
             "text": "{temp}",
             "voice": "{temp}"
@@ -284,7 +284,7 @@
         },
         "dewpoint": {
           "usePlusPrefix": false,
-          "speakLeadingZero": false,
+          "speakLeadingZero": true,
           "template": {
             "text": "{dewpoint}",
             "voice": "{dewpoint}"
