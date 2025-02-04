@@ -7,6 +7,10 @@ PROFILE:OKKK_DEL:10:2
 ATIS2:Kuwait Delivery
 ATIS3:Request clearance 10 minutes before departure.
 ATIS4:How is my driving? Tell me at vats.im/khljfdb
+PROFILE:OKKK_GMP_FMP:10:2
+ATIS2:Kuwait Planner
+ATIS3:DO NOT CONTACT ME
+ATIS4:
 PROFILE:OKKK_GND:20:3
 ATIS2:Kuwait Ground
 ATIS3:Covering the Kuwait GMC
