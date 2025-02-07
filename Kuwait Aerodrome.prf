@@ -77,3 +77,7 @@ LastSession	range	100
 LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
 Plugins	Plugin6Display1	Standard ES radar screen
+Plugins	Plugin9	\OKAC\Plugins\VATCAN Plugin\VATCANBookings.dll
+Plugins	Plugin9Display0	DelHel
+Plugins	Plugin9Display1	Ground Radar display
+Plugins	Plugin9Display2	Standard ES radar screen

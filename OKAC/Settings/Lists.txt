@@ -61,7 +61,6 @@ m_LineNumber:10
 m_Resizable:1
 m_OrderingColumn:-14
 m_HeaderOnly:0
-m_Column:CTOT:4:1:5001:0:0:0:VATCAN Bookings:::0:0.0
 m_Column:REQ:4:1:546:0:548:1:VCH::VCH:0:0.0
 m_Column:PRT:3:1:544:346:0:0:VCH:VCH::0:0.0
 m_Column:POS:4:1:1:0:0:1:Ground Radar plugin:::0:0.0
@@ -69,6 +68,7 @@ m_Column:WT:2:1:10032:0:0:1:TopSky plugin:::1:0.0
 m_Column:ATYP:5:1:10028:0:0:1:TopSky plugin:::1:0.0
 m_Column:FR:3:1:63:0:0:1::::0:0.0
 m_Column:C/S:9:1:10021:6:4:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
+m_Column:CTOT:5:1:5001:0:0:1:VATCAN Bookings:::0:0.0
 m_Column:ADES:4:1:10008:1001:39:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
 m_Column:RFL:4:1:10006:59:0:1:TopSky plugin:TopSky plugin::1:0.0
 m_Column:SID:15:1:10011:17:0:1:TopSky plugin:::0:0.0

@@ -1,6 +1,8 @@
 DisplayTypeName:Standard ES radar screen
-DisplayTypeNeedRadarContent:0
+DisplayTypeNeedRadarContent:1
 DisplayTypeGeoReferenced:1
+SECTORFILE:
+SECTORTITLE:
 SHOWC:1
 SHOWSB:0
 BELOW:0
@@ -13,5 +15,5 @@ SIMULATION_MODE:1
 DISABLEPANNING:0
 DISABLEZOOMING:0
 DisplayRotation:0.00000
-TAGFAMILY:TopSky
+TAGFAMILY:TopSky_TWR
 WINDOWAREA:28.988590:47.424089:29.503667:48.525861
