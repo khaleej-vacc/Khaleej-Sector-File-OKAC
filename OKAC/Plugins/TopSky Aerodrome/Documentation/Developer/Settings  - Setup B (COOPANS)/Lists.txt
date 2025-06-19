@@ -73,26 +73,26 @@ m_Column:FCOPX:6:0:10045:0:99:1:TopSky plugin::TopSky plugin:0:0.0
 m_Column:FETX:5:0:10092:0:0:1:TopSky plugin:::0:0.0
 m_Column:FText:8:0:10095:112:0:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:ADES:5:0:10008:1001:7:1:TopSky plugin:TopSky plugin::1:0.0
-m_Column:FX:6:0:10112:0:0:1:TopSky plugin:::0:0.0
-m_Column:STA:5:0:10115:0:0:1:TopSky plugin:::0:0.0
-m_Column:TTLTTG:7:0:10118:0:0:1:TopSky plugin:::0:0.0
+m_Column:FX:6:0:10112:0:0:0:TopSky plugin:::0:0.0
+m_Column:STA:5:0:10115:0:0:0:TopSky plugin:::0:0.0
+m_Column:TTLTTG:7:0:10118:0:0:0:TopSky plugin:::0:0.0
 m_Column: SI:7:0:10014:20:0:1:TopSky plugin:::1:0.0
 m_Column::2:0:65:25:0:1::::1:0.0
 m_Column:ETA:5:0:10033:0:0:1:TopSky plugin:::1:0.0
 m_Column:STAR:8:0:10012:18:124:1:TopSky plugin::TopSky plugin:1:0.0
 m_Column:ARWY:5:0:10010:19:0:1:TopSky plugin:::1:0.0
-m_Column:SQ:3:0:10109:0:0:1:TopSky plugin:::0:0.0
+m_Column:SQ:3:0:10109:0:0:0:TopSky plugin:::0:0.0
 m_Column:Gate:5:0:2:1:0:1:Ground Radar plugin:Ground Radar plugin::1:0.0
 m_Column:OP_TEXT:11:0:10058:11:0:1:TopSky plugin:TopSky plugin::0:0.0
 m_Column:TEXT2:11:0:10059:2:0:1:TopSky plugin:TopSky plugin::0:0.0
-m_Column:MNR:6:0:10123:0:0:1:TopSky plugin:::0:0.0
-m_Column:OFL:4:0:10124:110:150:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
-m_Column:NAT:4:0:10119:0:0:1:TopSky plugin:::0:0.0
-m_Column:OAN:8:0:10122:0:0:1:TopSky plugin:::0:0.0
-m_Column:CTO:5:0:10125:0:0:1:TopSky plugin:::0:0.0
-m_Column:+:2:0:10126:0:154:1:TopSky plugin::TopSky plugin:0:0.0
-m_Column:NBT:5:0:10120:147:145:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
-m_Column:NLT:5:0:10121:148:146:1:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
+m_Column:MNR:6:0:10123:0:0:0:TopSky plugin:::0:0.0
+m_Column:OFL:4:0:10124:110:150:0:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
+m_Column:NAT:4:0:10119:0:0:0:TopSky plugin:::0:0.0
+m_Column:OAN:8:0:10122:0:0:0:TopSky plugin:::0:0.0
+m_Column:CTO:5:0:10125:0:0:0:TopSky plugin:::0:0.0
+m_Column:+:2:0:10126:0:154:0:TopSky plugin::TopSky plugin:0:0.0
+m_Column:NBT:5:0:10120:147:145:0:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
+m_Column:NLT:5:0:10121:148:146:0:TopSky plugin:TopSky plugin:TopSky plugin:0:0.0
 m_Column:C:1:0:10099:127:0:1:TopSky plugin:TopSky plugin::0:0.0
 END
 DEP
