@@ -2,6 +2,8 @@
   "version": 1,
   "name": "Kuwait (OKKK)",
   "id": "ab7c281c-6570-47ef-94c0-10ad1c87d72d",
+  "updateUrl": "https://raw.githubusercontent.com/khaleej-vacc/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Kuwait%20(OKKK).json",
+  "updateSerial": 2025062201,
   "stations": [
     {
       "id": "1db1877a-a954-43a1-9dbd-bff5d092eb12",
