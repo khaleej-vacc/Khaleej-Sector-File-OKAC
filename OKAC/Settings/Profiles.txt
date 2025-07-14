@@ -1,14 +1,14 @@
 PROFILE
 PROFILE:[INITIALS]_OBS:100:0
 ATIS2:"Kuwait Observer"
-ATIS3:
+ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_DEL:10:2
 ATIS2:"Kuwait Delivery"
 ATIS3:Request clearance 10 minutes before departure.
 ATIS4:Give us feedback! - vats.im/khatcfdb
 PROFILE:OKKK_GMP_FMP:10:2
-ATIS2:"Kuwait Planner" - DO NOT CONTACT ME
+ATIS2:"Kuwait Planner"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_GND:20:3
