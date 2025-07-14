@@ -1,16 +1,16 @@
 PROFILE
 PROFILE:[INITIALS]_OBS:100:0
 ATIS2:"Kuwait Observer"
-ATIS3:
-ATIS4:Welcome to Kuwait | Visit khaleejvacc.com
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKAC_CTR:201:6
 ATIS2:"Kuwait Radar" - CPDLC [OKAC]
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKAC_U_CTR:201:6
 ATIS2:"Kuwait Upper" - CPDLC [OKAU]
-ATIS3:Covering the Kuwait ACC Above FL345
-ATIS4:Give us feedback! - vats.im/khatcfdb
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_APP:100:5
 ATIS2:"Kuwait Approach"
 ATIS3:Give us feedback! - vats.im/khatcfdb
