@@ -25,7 +25,7 @@ Runways:extended centerline:10526623:1.0:0:0:7
 Runways:name:8421504:2.0:0:0:7
 Datablock:non concerned:8618883:3.5:0:0:7
 Datablock:notified:12369084:3.5:0:0:7
-Datablock:assumed:59392:3.5:0:0:7
+Datablock:assumed:8257405:3.5:0:0:7
 Datablock:transfer to me initiated:15658734:3.5:0:0:7
 Datablock:redundant:16752448:3.5:0:0:7
 Datablock:information:8453888:3.5:0:0:7
@@ -84,6 +84,7 @@ Other:manual taxi line:16777215:5.0:0:3:2
 Other:manual taxi line ends at predefined point:65535:5.0:0:3:2
 Other:predefined taxi line:65280:5.0:0:3:2
 Other:terminal taxi line:255:5.0:0:3:2
+Other:list title bar:16777215:0.0:0:0:7
 Other:list header:13355205:3.6:0:0:7
 Other:normal menu item:16777215:3.5:0:0:7
 Other:disabled menu item:8421504:3.5:0:0:7
