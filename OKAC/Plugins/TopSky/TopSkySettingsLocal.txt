@@ -1,6 +1,5 @@
 Setup_AutoSignIn=1
 
-Window_NOTAM=1,1539,400
 Window_SM_LeaveHoldTime=3
 Window_SM_LowestLevel=30
 
@@ -8,8 +7,6 @@ Window_SM_LowestLevel=30
 CPDLC_Default=1
 Window_CARD=1,1563,776
 Window_CPDLC_Current=1,0,585
-Window_MsgIn=1,1630,50
-Window_MsgOut=1,1630,100
 System_FPASD=1
 
 [OKAC_CTR]
