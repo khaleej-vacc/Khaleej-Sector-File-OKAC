@@ -178,7 +178,7 @@ System_QNHTL_ForceMetarSourceVATSIM=1
 Maps_NOTAM_Activation=1
 
 Track_HistoryDots=5
-Track_PredictionLine=1
+Track_PredictionLine=0
 
 RwyAppLines_Auto=0
 
@@ -189,7 +189,7 @@ Color_Proposition_Accepted=0,232,0
 Color_Proposition_In=255,130,180
 Color_Proposition_Out=0,130,180
 Color_Proposition=255,130,180
-Color_Assumed=0,255,0
+Color_Assumed=125,255,125
 Color_Redundant=96,255,227
 Color_Information=0,232,0
 Color_Information_FL=41,245,41
