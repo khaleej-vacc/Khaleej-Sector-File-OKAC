@@ -1,6 +1,6 @@
 VOICE
 AG:OKAC_CTR Kuwait Radar:125.300
-AG:OKAC_FM_CTR Kuwait Radar:125.300
+AG:OKAC_FM_CTR Kuwait Radar Flow Manager:125.300
 AG:OKAC_U_CTR Kuwait Radar:132.100
 AG:OKAJ_TWR Al Jaber Tower:124.150
 AG:OKAJ_GND Al Jaber Ground:127.000
