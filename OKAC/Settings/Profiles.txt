@@ -19,4 +19,12 @@ PROFILE:OKKK_TWR:40:4
 ATIS2:"Kuwait Tower"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKAS_TWR:50:4
+ATIS2:"Al Salem Tower"
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKAJ_TWR:50:4
+ATIS2:"Al Jaber Tower"
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 END
