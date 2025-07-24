@@ -1,6 +1,5 @@
 Setup_AutoSignIn=1
 
-Window_NOTAM=1,1539,400
 Window_SM_LeaveHoldTime=3
 Window_SM_LowestLevel=30
 
