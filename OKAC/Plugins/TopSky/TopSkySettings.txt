@@ -135,8 +135,11 @@ Menu_MaxListItems=15
 Window_SM_LeaveHoldTime=3
 Window_CARD_View_Risk=0
 
-WXR_Latitude=52.72099972
-WXR_Longitude=-8.885199722
+WXR_Gain=100
+WXR_ImageSize=512
+WXR_Latitude=29
+WXR_Longitude=50
+WXR_Brightness=65
 
 HTTP_NAT_Tracks_URL=https://www.notams.faa.gov/common/nat.html
 
@@ -161,8 +164,8 @@ Malrt_Irregular=IRR
 
 Airspace_P_Flag=EIDW
 Airspace_No_DUPE_Codes=7000,2000,2200,1200,2655,0401
-Airspace_SIGMET_Areas=OEJD
-Airspace_NOTAM_Add=OEJD, OERD
+Airspace_SIGMET_Areas=OKAC
+Airspace_NOTAM_Add=OKAC
 Airspace_ASSR_Type=2
 Airspace_ASSR_AutoAssign_Type=0
 Areas_Label_FontSize=6
