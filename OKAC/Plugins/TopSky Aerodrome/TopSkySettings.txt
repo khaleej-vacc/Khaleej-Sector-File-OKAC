@@ -178,7 +178,7 @@ System_QNHTL_ForceMetarSourceVATSIM=1
 Maps_NOTAM_Activation=1
 
 Track_HistoryDots=5
-Track_PredictionLine=1
+Track_PredictionLine=0
 
 RwyAppLines_Auto=0
 
