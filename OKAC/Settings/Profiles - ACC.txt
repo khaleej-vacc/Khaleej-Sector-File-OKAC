@@ -16,7 +16,7 @@ ATIS2:"Kuwait Approach"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_F_APP:100:5
-ATIS2:"Kuwait Director" - CONTACT WITH CALLSIGN ONLY
+ATIS2:"Kuwait Director" - CONTACT WITH CALLSIGN ONLY!
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 END
