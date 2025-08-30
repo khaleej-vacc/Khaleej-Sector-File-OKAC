@@ -1,5 +1,5 @@
 Settings	alias	\OKAC\Alias\alias.txt
-Settings	sector	\OKAC-Developer-Package_20250830091249-241301-0034.sct
+Settings	sector	\OKAC-Developer-Package_20250830165117-241301-0038.sct
 Settings	SettingsfileSYMBOLOGY	\OKAC\Settings\Symbology.txt
 Settings	SettingsfileVOICE	\OKAC\Settings\VoiceChannels.txt
 Settings	SettingsfilePROFILE	\OKAC\Settings\Profiles - ACC.txt
@@ -91,4 +91,3 @@ LastSession	atis4	Welcome to Kuwait | Visit khaleejvacc.net
 LastSession	range	100
 LastSession	proxyserver	localhost
 LastSession	simdatapublish	0
-LastSession	atis_freq4	118000
