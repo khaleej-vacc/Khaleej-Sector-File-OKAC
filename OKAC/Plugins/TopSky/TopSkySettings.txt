@@ -258,6 +258,8 @@ Color_Rwy_App_Line_Inuse=135,150,170
 Color_Rwy_App_Line_Not_Inuse=40,40,40
 
 Color_Selected=72,106,149
+Color_Sid_Star_Allocation=125,255,125
+Color_Rwy_Locked=125,255,125
 
 Color_TSA_Active=93,138,195
 Color_TSA_Border_Highlight=0,0,0
