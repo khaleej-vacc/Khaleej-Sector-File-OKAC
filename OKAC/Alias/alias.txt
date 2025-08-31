@@ -12,7 +12,7 @@
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;                                                                                                                         ;
-;  ALL RIGHTS RESERVED   AeroNav Association. NAV-DATA   AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
+;  ALL RIGHTS RESERVED © AeroNav Association. NAV-DATA © AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;  The Global Nav Generator (GNG) and all it sub-modules where created by the AeroNav Association.                        ;
@@ -23,9 +23,91 @@
 ;  only. The data must not be copied, photocopied, translated, reverse engineered, decompiled or reduced to any           ;
 ;  electronic medium or machine legible form, neither completely nor in part.                                             ;
 ;=========================================================================================================================;
-;  AIRAC 2406/1  ++  Valid period: 13/JUN/2024 - 10/JUL/2024  ++  File-Publisher: Kuwait vACC - OKAC                      ;
+;  AIRAC 2413/1  ++  Valid period: 26/DEC/2024 - 22/JAN/2025  ++  File-Publisher: Khaleej vACC - Kuwait FIR - OKAC        ;
 ;=========================================================================================================================;
-;*** Approach ***
+;*** 1 Logging on ***
+.on /Asalam Alaikum, $radioname is online.
+.off /$radioname is now closed. FiAmaanAllah!
+
+;*** 2 Delivery & Ground ***
+.rrc Clearance available, report ready to copy.
+.rb Readback correct. 
+.rrs Report ready for startup / pushback.
+.rrp Report ready for pushback. 
+.sa Startup approved. 
+.spa Startup and pushback approved. 
+.pbsu Startup and pushback approved, expect runway $deprwy.
+.pa Pushback approved. 
+.pf Pushback approved, facing $1. 
+.pn Pushback approved, facing north. 
+.pne Pushback approved, facing north-east. 
+.pe Pushback approved, facing east. 
+.pse Pushback approved, facing south-east. 
+.ps Pushback approved, facing south. 
+.psw Pushback approved, facing south-west. 
+.pw Pushback approved, facing west. 
+.pnw Pushback approved, facing north-west.
+.rbc Readback correct, report ready for startup / pushback.
+.cl Cleared to $arr, via $sid, runway $deprwy, initial climb altitude $alt, squawk $asquawk.
+.rrt Report ready for taxi. 
+.rft Are you ready for taxi?
+.tv Taxi via $1. 
+.thp Taxi to holding point runway $deprwy via $1. QNH $altim($dep)
+.tts Taxi to stand $1 via $2. 
+.ttg Taxi to gate $1 via $2. 
+.ttc Taxi to a parking position of your choice. 
+.hst Hold short of taxiway $1. 
+.ths Taxi via $1, hold short of runway $2. 
+.hs Hold short of runway $1. 
+.xr Cross runway $1.
+.hp HOLD POSITION. 
+.gw Give way to $1. 
+.wcc When clear of $1 continue taxi.
+.no No objection.
+.invalfl Hello, it looks like you have an invalid flight level, your new cruise level $1.
+.route Hello, it looks like have an invalid route, your route is modified as follows: // $1 , flight planned route. // Please re-file your flight plan and amend the route accordingly in your FMC. When ready, request clearance as normal. To avoid getting rerouted in future you can take a look at vats.im/acckwrm
+.routefull  Hello, it looks like have an invalid route, expect a full reroute as follows: // $1  // Please re-file your flight plan and amend the route accordingly in your FMC. When ready, request clearance as normal. To avoid getting rerouted in future you can take a look at vats.im/acckwrm
+.flpln Please file a flight plan, Thanks.
+
+;*** 3 Tower ***
+.rid are you ready for immediate departure?
+.lu line up runway $deprwy and wait
+.lul behind landing traffic lineup runway $deprwy and wait behind
+.lud behind departing traffic lineup runway $deprwy and wait behind
+.cto winds $winds, runway $deprwy, cleared for take-off.
+.cftu maintain runway heading, winds $winds, runway $deprwy, cleared for take-off. After departure, monitor UNICOM on 122.800 and have a good flight!
+.cfit maintain runway heading, winds $winds, intersection $1, cleared for take-off.
+.ctl wind $winds, runway $arrrwy cleared to land
+.cftv After departure turn $2, surface wind $winds, runway $deprwy cleared for takeoff
+.toc Hold position, CANCEL take-off, I say again, CANCEL take-off.
+.stop STOP immediately, $aircraft, STOP immediately.
+.ctg wind $winds, runway $1 cleared touch and go
+.cla wind $winds, runway $1 cleared low approach
+.goa go around, climb $1 on runway heading
+.con continue approach, number $1, wind $winds
+.rom continue approach, report passing outer marker, wind $winds
+.late continue approach, expect late clearance, wind $winds
+.vr vacate right when able, report vacated
+.vl vacate left when able, report vacated
+.in Cleared to enter control zone, not above altitude 1500ft. 
+.out Leave control zone via $1. 
+.mlt Make left turns. 
+.mrt Make right turns. 
+.lta Right turn approved.
+.jld Join left downind runway $arrrwy.
+.jrd Join RIGHT downwind runway $arrrwy.
+.jlb Join left base runway $arrrwy.
+.jrb Join RIGHT base runway $arrrwy.
+.ed Extend downwind until advised.
+.tb Turn now for base.
+.mda Make direct approach runway $arrrwy. 
+.msa Make straight-in approach runway $arrrwy. 
+.mfs Make full stop landing. 
+.orl Orbit left.
+.orr Orbit right.
+.hov Hold over $1.
+
+;*** 4 Approach ***
 .rps Report present speed.
 .mps Maintain present speed.
 .spd Speed $1 knots.
@@ -63,87 +145,7 @@
 .stararr Cleared $star arrival, $arrrwy
 .lr Landing runway $arrrwy($arr)
 
-;*** Delivery & Ground ***
-.rrc Clearance available, report ready to copy.
-.rb Readback correct. 
-.rrs Report ready for startup / pushback.
-.rrp Report ready for pushback. 
-.sa Startup approved. 
-.spa Startup and pushback approved. 
-.pbsu Startup and pushback approved, expect runway $deprwy.
-.pa Pushback approved. 
-.pf Pushback approved, facing $1. 
-.pn Pushback approved, facing north. 
-.pne Pushback approved, facing north-east. 
-.pe Pushback approved, facing east. 
-.pse Pushback approved, facing south-east. 
-.ps Pushback approved, facing south. 
-.psw Pushback approved, facing south-west. 
-.pw Pushback approved, facing west. 
-.pnw Pushback approved, facing north-west.
-.rbc Readback correct, report ready for startup / pushback.
-.clr Cleared to $arr, via flight planned route, expect radar vectors, climb $alt, squawk $asquawk
-.rrt Report ready for taxi. 
-.rft Are you ready for taxi?
-.tv Taxi via $1. 
-.thp Taxi to holding point runway $deprwy via $1. QNH $altim($dep)
-.tts Taxi to stand $1 via $2. 
-.ttg Taxi to gate $1 via $2. 
-.ttc Taxi to a parking position of your choice. 
-.hst Hold short of taxiway $1. 
-.ths Taxi via $1, hold short of runway $2. 
-.hs Hold short of runway $1. 
-.xr Cross runway $1.
-.hp HOLD POSITION. 
-.gw Give way to $1. 
-.wcc When clear of $1 continue taxi.
-.no No objection.
-.invalfl Hello, it looks like you have an invalid flight level, your new cruise level $1.
-.route Hello, it looks like have an invalid route, your route is modified as follows: // $1 , flight planned route. // Please re-file your flight plan and amend the route accordingly in your FMC. When ready, request clearance as normal. To avoid getting rerouted in future you can take a look at vats.im/acckwrm
-.routefull  Hello, it looks like have an invalid route, expect a full reroute as follows: // $1  // Please re-file your flight plan and amend the route accordingly in your FMC. When ready, request clearance as normal. To avoid getting rerouted in future you can take a look at vats.im/acckwrm
-
-;*** General ***
-.cw .msg $aircraft Hello, you will enter my airspace shortly. Please contact me on $freq when $1.
-.cp .msg $aircraft Hello, you will enter my airspace shortly. Please contact me on $freq when passing $uc($1).
-.cwr .msg $aircraft Hello, $radioname is providing top-down service for $dep. Please contact me on $freq when you are ready.
-.ci .msg Hello, NO MOVEMENT without permission, please! $radioname is providing top-down service for $dep. HOLD POSITION and contact me IMMEDIATELY on $freq!
-.h $radioname, hello. 
-.gd $radioname, good day. 
-.gm $radioname, good morning. 
-.ga $radioname, good afternoon. 
-.ge $radioname, good evening. 
-.v? Are you able to receive voice?
-.pym Pass your message.
-.sb Standby, I'll call you back.
-.gba Salam.
-.fpc Flightplan closed at $time z, have a great rest of your day, bye.
-.neg Negative.
-.aff Affirm
-.rgr Roger.
-.cor Correction.
-.imm Immediately.
-.thx Thanks.
-.dis Disregard last transmission. 
-.wel Welcome to $1
-.ru Report unable.
-.rac Report aircraft type (and version).
-.ri Report intentions.
-.wx Metreport $metar($1).
-.wxa Metreport $metar($arr).
-.co Contact $radioname($1) $freq($1), bye!
-.autocontact Contact $1 $2, bye!
-.ack Your request is acknowledged. Standby.
-.rst Radar service terminated. 
-.noatc You are leaving my airspace, no further ATC service available, radar service terminated. Monitor UNICOM on 122.800 and have a good flight!
-.noatcb $radioname is closing, no further ATC service available, radar service terminated. Monitor UNICOM on 122.800 and have a good flight!
-.noatcc $radioname is closing, for further ATC service contact $radioname($1) $freq($1)!
-.noatco You are outside of my airspace, continue own discretion and monitor UNICOM on 122.800!
-.blt Please use UNICOM 122.800 for blind transmissions. Thank you.
-.nofp Please file a flight plan.
-.invfp Your flight plan is invalid. Please refile, thank you.
-.airac Please confirm your AIRAC version.
-
-;*** Radar ***
+;*** 5 Radar ***
 .sq Set squawk $asquawk
 .sqs Set squawk STANDBY.
 .sqc Set squawk CHARLIE. 
@@ -193,44 +195,49 @@
 .up until passing FL$1
 .ra Report level/altitude passing for Mode-C verification.
 .rn resume own navigation DCT
+.kum descend and maintain FL220 to be level by KUMBO.
 
-;*** Tower ***
-.rid are you ready for immediate departure?
-.lu line up runway $deprwy and wait
-.lul behind landing traffic lineup runway $deprwy and wait behind
-.lud behind departing traffic lineup runway $deprwy and wait behind
-.cft maintain runway heading, winds $winds, runway $deprwy, cleared for take-off. After departure, contact $radioname($1) $freq($1).
-.cftu maintain runway heading, winds $winds, runway $deprwy, cleared for take-off. After departure, monitor UNICOM on 122.800 and have a good flight!
-.cfit maintain runway heading, winds $winds, intersection $1, cleared for take-off.
-.ctl wind $winds, runway $arrrwy cleared to land
-.cftv After departure turn $2, surface wind $winds, runway $deprwy cleared for takeoff
-.toc Hold position, CANCEL take-off, I say again, CANCEL take-off.
-.stop STOP immediately, $aircraft, STOP immediately.
-.ctg wind $winds, runway $1 cleared touch and go
-.cla wind $winds, runway $1 cleared low approach
-.goa go around, climb $1 on runway heading
-.con continue approach, number $1, wind $winds
-.rom continue approach, report passing outer marker, wind $winds
-.late continue approach, expect late clearance, wind $winds
-.vr vacate right when able, report vacated
-.vl vacate left when able, report vacated
-.in Cleared to enter control zone, not above altitude 1500ft. 
-.out Leave control zone via $1. 
-.mlt Make left turns. 
-.mrt Make right turns. 
-.lta Right turn approved.
-.jld Join left downind runway $arrrwy.
-.jrd Join RIGHT downwind runway $arrrwy.
-.jlb Join left base runway $arrrwy.
-.jrb Join RIGHT base runway $arrrwy.
-.ed Extend downwind until advised.
-.tb Turn now for base.
-.mda Make direct approach runway $arrrwy. 
-.msa Make straight-in approach runway $arrrwy. 
-.mfs Make full stop landing. 
-.orl Orbit left.
-.orr Orbit right.
-.hov Hold over $1.
+;*** 6 General ***
+.cw .msg $aircraft Hello, you will enter my airspace shortly. Please contact me on $freq when $1.
+.cp .msg $aircraft Hello, you will enter my airspace shortly. Please contact me on $freq when passing $uc($1).
+.cwr .msg $aircraft Hello, $radioname is providing top-down service for $dep. Please contact me on $freq when you are ready.
+.ci .msg Hello, NO MOVEMENT without permission, please! $radioname is providing top-down service for $dep. HOLD POSITION and contact me IMMEDIATELY on $freq!
+.h $radioname, hello. 
+.gd $radioname, good day. 
+.gm $radioname, good morning. 
+.ga $radioname, good afternoon. 
+.ge $radioname, good evening. 
+.v? Are you able to receive voice?
+.pym Pass your message.
+.sb Standby, I'll call you back.
+.gba Salam.
+.fpc Flightplan closed at $time z, have a great rest of your day, bye.
+.neg Negative.
+.aff Affirm
+.rgr Roger.
+.cor Correction.
+.imm Immediately.
+.thx Thanks.
+.dis Disregard last transmission. 
+.wel Welcome to Kuwait
+.ru Report unable.
+.rac Report aircraft type (and version).
+.ri Report intentions.
+.wx Metreport $metar($1).
+.wxa Metreport $metar($arr).
+.co Contact $radioname($1) $freq($1), bye!
+.autocontact Contact $1 $2, bye!
+.ack Your request is acknowledged. Standby.
+.rst Radar service terminated. 
+.noatc You are leaving my airspace, no further ATC service available, radar service terminated. Monitor UNICOM on 122.800 and have a good flight!
+.noatcb $radioname is closing, no further ATC service available, radar service terminated. Monitor UNICOM on 122.800 and have a good flight!
+.noatcc $radioname is closing, for further ATC service contact $radioname($1) $freq($1)!
+.noatco You are outside of my airspace, continue own discretion and monitor UNICOM on 122.800!
+.blt Please use UNICOM 122.800 for blind transmissions. Thank you.
+.nofp Please file a flight plan.
+.invfp Your flight plan is invalid. Please refile, thank you.
+.airac Please confirm your AIRAC version.
 
-;*** Others ***
-.flpln Please file a flight plan, Thanks.
+;*** 7 Others ***
+.noob It seems you don't know how to correctly operate your aircraft. Please consider learning offline to become proficient before joining the VATSIM network, or flying an aircraft that you are familiar with
+

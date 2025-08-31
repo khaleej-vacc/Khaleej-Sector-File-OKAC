@@ -136,11 +136,14 @@ Window_SM_LeaveHoldTime=3
 Window_CARD_View_Risk=0
 
 WXR_Gain=100
-WXR_ImageSize=512
-WXR_Latitude=29
+WXR_Brightness=50
+WXR_Latitude=25
 WXR_Longitude=50
-WXR_Brightness=65
-
+WXR_ImageSize=512
+HTTP_GRIB_Latitude_Max=33
+HTTP_GRIB_Latitude_Min=26
+HTTP_GRIB_Longitude_Max=53
+HTTP_GRIB_Longitude_Min=44
 HTTP_NAT_Tracks_URL=https://www.notams.faa.gov/common/nat.html
 
 Shortcut_RadarMenu_Combo=0x12
@@ -193,7 +196,7 @@ Color_Proposition_In=255,130,180
 Color_Proposition_Out=0,130,180
 Color_Proposition=255,130,180
 Color_Assumed=125,255,125
-Color_Redundant=96,255,227
+Color_Redundant=255,255,255
 Color_Information=0,232,0
 Color_Information_FL=41,245,41
 Color_Informed=175,125,175
