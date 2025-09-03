@@ -1,2 +1,2 @@
 # Khaleej-Sector-File-OKAC
-files.aero-nav.com/OKAC
+https://files.aero-nav.com/OKAC
