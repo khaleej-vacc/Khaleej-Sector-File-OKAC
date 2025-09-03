@@ -1,6 +1,6 @@
 Settings	alias	\OKAC\Alias\alias.txt
 Settings	sector	\OKAC-Developer-Package_20250831083938-241301-0044.sct
-Settings	SettingsfileSYMBOLOGY	\OKAC\Settings\Symbology.txt
+Settings	SettingsfileSYMBOLOGY	\OKAC\Settings\SymbologyLM.txt
 Settings	SettingsfileVOICE	\OKAC\Settings\VoiceChannels.txt
 Settings	SettingsfilePROFILE	\OKAC\Settings\Profiles - ACC.txt
 Settings	SettingsfileTAGS	\OKAC\Settings\Tags.txt
@@ -21,7 +21,7 @@ Settings	airports	\OKAC\ICAO\ICAO_Airports.txt
 Settings	aircraft	\OKAC\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\OKAC\NavData\icao.txt
 Settings	airways	\OKAC\NavData\airway.txt
-RecentFiles	Recent1	\OKAC\ASR\Kuwait FIR.asr
+RecentFiles	Recent1	\OKAC\ASR\Light\Kuwait FIR.asr
 RecentFiles	Recent2	\OKAC\ASR\Kuwait SMGCS.asr
 ASRFastKeys	1	\OKAC\ASR\Kuwait FIR.asr
 ASRFastKeys	2	\OKAC\ASR\Kuwait SMGCS.asr
