@@ -21,7 +21,7 @@ Settings	airports	\OKAC\ICAO\ICAO_Airports.txt
 Settings	aircraft	\OKAC\ICAO\ICAO_Aircraft.txt
 Settings	airportcoords	\OKAC\NavData\icao.txt
 Settings	airways	\OKAC\NavData\airway.txt
-RecentFiles	Recent1	\OKAC\ASR\Light\Kuwait FIR.asr
+RecentFiles	Recent1	\OKAC\ASR\Kuwait FIR.asr
 RecentFiles	Recent2	\OKAC\ASR\Kuwait SMGCS.asr
 ASRFastKeys	1	\OKAC\ASR\Kuwait FIR.asr
 ASRFastKeys	2	\OKAC\ASR\Kuwait SMGCS.asr
