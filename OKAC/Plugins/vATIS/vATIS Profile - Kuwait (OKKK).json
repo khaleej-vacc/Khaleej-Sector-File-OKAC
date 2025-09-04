@@ -1,8 +1,8 @@
 {
   "name": "Kuwait (OKKK)",
-  "id": "588a3477-c620-4e06-a97f-6ad52463318c",
+  "id": "7e3284a2-21b0-46a6-862a-8e1f00a27937",
   "updateUrl": "https://raw.githubusercontent.com/khaleej-vacc/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Kuwait%20(OKKK).json",
-  "updateSerial": 2025090302,
+  "updateSerial": 2025090304,
   "stations": [
     {
       "id": "1db1877a-a954-43a1-9dbd-bff5d092eb12",
@@ -18,7 +18,7 @@
         "observationTime": {
           "template": {
             "text": "{hour}{minute}Z",
-            "voice": "{hour}{minute} ZULU {special}"
+            "voice": "{hour}{minute} ZULU {special}."
           }
         },
         "surfaceWind": {
@@ -30,7 +30,7 @@
           "standard": {
             "template": {
               "text": "{wind_dir}/{wind_spd}KT",
-              "voice": "{wind_dir} AT {wind_spd}"
+              "voice": "{wind_dir} AT {wind_spd}."
             }
           },
           "standardGust": {
@@ -1901,7 +1901,7 @@
           "speakLeadingZero": true,
           "template": {
             "text": "{temp}",
-            "voice": "{temp}"
+            "voice": " {temp}"
           }
         },
         "dewpoint": {
@@ -1909,14 +1909,14 @@
           "speakLeadingZero": true,
           "template": {
             "text": "{dewpoint}",
-            "voice": "{dewpoint}"
+            "voice": " {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
             "text": "{altimeter|hpa}",
-            "voice": "{altimeter|hpa}"
+            "voice": "{altimeter|hpa} "
           }
         },
         "trend": {
@@ -1964,7 +1964,7 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Male",
-        "speechRate": 180
+        "speechRate": 170
       },
       "presets": [
         {
@@ -2134,7 +2134,7 @@
         {
           "variableName": "HPA",
           "text": "HPA",
-          "voice": "HECK-TOE-PAS-CALS"
+          "voice": "HECK-TOE-PASCALS"
         },
         {
           "variableName": "E4",
@@ -2155,6 +2155,16 @@
           "variableName": "DP",
           "text": "DP",
           "voice": "DEW-POINT"
+        },
+        {
+          "variableName": "FL150",
+          "text": "FL150",
+          "voice": "FLIGHT LEVEL ONE-FIVE-ZERO."
+        },
+        {
+          "variableName": "TRL",
+          "text": "TRL",
+          "voice": ". TRANSITION LEVEL"
         }
       ],
       "airportConditionDefinitions": [],
