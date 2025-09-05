@@ -1,0 +1,111 @@
+{
+    "OKKK": {
+        "elevation": 205,
+        "runways": "33L,33R,15L,15R",
+        "transAlt": 13000,
+        "maxInitialClimb": 4000,
+        "customRules" : {},
+        "timeMode": false,
+        "timezone": "asia/Kuwait",
+        "appSI": "BKA,KAF,KR",
+        "sids": {
+            "climbvia": true,
+            "RALKA": {
+                "F": {
+                    "1": {
+                        "rwy": "33L,33R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                },
+                "E": {
+                    "1": {
+                        "rwy": "15L,15R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                }
+			},
+            "ALVAX": {
+                "F": {
+                    "1": {
+                        "rwy": "33L,33R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                },
+                "E": {
+                    "1": {
+                        "rwy": "15L,15R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                }
+			},
+            "SESRU": {
+                "F": {
+                    "1": {
+                        "rwy": "33L,33R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                },
+                "E": {
+                    "1": {
+                        "rwy": "15L,15R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                }
+			},
+            "BOXIK": {
+                "F": {
+                    "1": {
+                        "rwy": "33L,33R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                },
+                "E": {
+                    "1": {
+                        "rwy": "15L,15R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                }
+			},
+            "ASVIR": {
+                "F": {
+                    "1": {
+                        "rwy": "33L,33R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                },
+                "E": {
+                    "1": {
+                        "rwy": "15L,15R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                }
+			},
+            "KFR": {
+                "F": {
+                    "1": {
+                        "rwy": "33L,33R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                },
+                "E": {
+                    "1": {
+                        "rwy": "15L,15R",
+                        "initial": 4000,
+                        "prio": 1
+                    }
+                }
+			}
+        }
+    }
+}
