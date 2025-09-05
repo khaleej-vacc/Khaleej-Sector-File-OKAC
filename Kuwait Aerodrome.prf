@@ -81,3 +81,7 @@ Plugins	Plugin9	\OKAC\Plugins\VATCAN Plugin\VATCANBookings.dll
 Plugins	Plugin9Display0	DelHel
 Plugins	Plugin9Display1	Ground Radar display
 Plugins	Plugin9Display2	Standard ES radar screen
+Plugins	Plugin10	\OKAC\Plugins\vSID\vSID.dll
+Plugins	Plugin10Display0	DelHel
+Plugins	Plugin10Display1	Ground Radar display
+Plugins	Plugin10Display2	Standard ES radar screen
