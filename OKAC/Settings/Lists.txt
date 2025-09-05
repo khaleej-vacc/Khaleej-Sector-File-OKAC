@@ -57,7 +57,7 @@ DEP
 m_Visible:1
 m_X:10
 m_Y:62
-m_LineNumber:10
+m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:-14
 m_HeaderOnly:0
