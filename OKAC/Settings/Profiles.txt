@@ -17,12 +17,12 @@ ATIS3:Request clearance 10 minutes before departure.
 ATIS4:Give us feedback! - vats.im/khatcfdb
 PROFILE:OKKK_FM_GND:20:3
 ATIS2:"Kuwait Ground Flow Manager"
-ATIS3:Request clearance 10 minutes before departure.
-ATIS4:Give us feedback! - vats.im/khatcfdb
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_FM_TWR:20:4
 ATIS2:"Kuwait Tower Flow Manager"
-ATIS3:Request clearance 10 minutes before departure.
-ATIS4:Give us feedback! - vats.im/khatcfdb
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_DEL:10:2
 ATIS2:"Kuwait Delivery"
 ATIS3:Request clearance 10 minutes before departure.
