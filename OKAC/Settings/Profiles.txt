@@ -1,18 +1,14 @@
 PROFILE
-PROFILE:[INITIALS]_OBS:100:0
-ATIS2:"Kuwait Observer"
+PROFILE:OKAJ_TWR:50:4
+ATIS2:"Al Jaber Tower"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKKK_DEL:10:2
-ATIS2:"Kuwait Delivery"
-ATIS3:Request clearance 10 minutes before departure.
-ATIS4:Give us feedback! - vats.im/khatcfdb
-PROFILE:OKKK_GND:20:3
-ATIS2:"Kuwait Ground"
+PROFILE:OKAS_GND:20:3
+ATIS2:"Al Salem Ground"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKKK_TWR:40:4
-ATIS2:"Kuwait Tower"
+PROFILE:OKAS_TWR:50:4
+ATIS2:"Al Salem Tower"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_P_DEL:10:2
@@ -27,16 +23,20 @@ PROFILE:OKKK_FM_TWR:20:4
 ATIS2:"Kuwait Tower Flow Manager"
 ATIS3:Request clearance 10 minutes before departure.
 ATIS4:Give us feedback! - vats.im/khatcfdb
-PROFILE:OKAS_GND:20:3
-ATIS2:"Al Salem Ground"
+PROFILE:OKKK_DEL:10:2
+ATIS2:"Kuwait Delivery"
+ATIS3:Request clearance 10 minutes before departure.
+ATIS4:Give us feedback! - vats.im/khatcfdb
+PROFILE:OKKK_GND:20:3
+ATIS2:"Kuwait Ground"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAS_TWR:50:4
-ATIS2:"Al Salem Tower"
+PROFILE:OKKK_TWR:40:4
+ATIS2:"Kuwait Tower"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAJ_TWR:50:4
-ATIS2:"Al Jaber Tower"
+PROFILE:[INITIALS]_OBS:100:0
+ATIS2:"Kuwait Observer"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 END
