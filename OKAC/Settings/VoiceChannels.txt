@@ -12,7 +12,7 @@
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;                                                                                                                         ;
-;  ALL RIGHTS RESERVED © AeroNav Association. NAV-DATA © AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
+;  ALL RIGHTS RESERVED Â© AeroNav Association. NAV-DATA Â© AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;  The Global Nav Generator (GNG) and all it sub-modules where created by the AeroNav Association.                        ;
@@ -27,18 +27,22 @@
 ;=========================================================================================================================;
 VOICE
 AG:OKAC_CTR Kuwait Radar:125.300:novoice:OKAC_CTR
+AG:OKAC_FM_CTR Kuwait Radar:125.300:novoice:OKAC_FM_CTR
 AG:OKAC_U_CTR Kuwait Radar:132.100:novoice:OKAC_U_CTR
 AG:OKAJ_GND Al Jaber Ground:127.000:novoice:OKAJ_GND
 AG:OKAJ_TWR Al Jaber Tower:124.150:novoice:OKAJ_TWR
 AG:OKAS_APP Mohalab Control:128.300:novoice:OKAS_APP
-AG:OKAS_ATIS:135.000:novoice:OKAS_ATIS
+AG:OKAS_ATIS:133.000:novoice:OKAS_ATIS
 AG:OKAS_GND Al Salem Ground:120.500:novoice:OKAS_GND
 AG:OKAS_TWR Al Salem Tower:118.000:novoice:OKAS_TWR
 AG:OKKK_APP Kuwait Approach:124.800:novoice:OKKK_APP
 AG:OKKK_ATIS:126.225:novoice:OKKK_ATIS
 AG:OKKK_DEL Kuwait Delivery:126.775:novoice:OKKK_DEL
+AG:OKKK_FM_APP Kuwait Approach:124.800:novoice:OKKK_FM_APP
+AG:OKKK_FM_GND Kuwait Ground:121.700:novoice:OKKK_FM_GND
+AG:OKKK_FM_TWR Kuwait Tower:118.300:novoice:OKKK_FM_TWR
 AG:OKKK_F_APP Kuwait Director:123.825:novoice:OKKK_F_APP
-AG:OKKK_GMP_FMP Kuwait Planner:126.775:novoice:OKKK_GMP_FMP
 AG:OKKK_GND Kuwait Ground:121.700:novoice:OKKK_GND
+AG:OKKK_P_DEL Kuwait Planner:126.775:novoice:OKKK_P_DEL
 AG:OKKK_TWR Kuwait Tower:118.300:novoice:OKKK_TWR
 END
