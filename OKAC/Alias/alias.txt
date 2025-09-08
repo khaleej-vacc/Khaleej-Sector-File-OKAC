@@ -12,7 +12,7 @@
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;                                                                                                                         ;
-;  ALL RIGHTS RESERVED © AeroNav Association. NAV-DATA © AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
+;  ALL RIGHTS RESERVED ï¿½ AeroNav Association. NAV-DATA ï¿½ AEROSOFT. FILES MUST NOT BE DISTRIBUTED TO NON-VATSIM MEMBERS!   ;
 ;                                                                                                                         ;
 ;=========================================================================================================================;
 ;  The Global Nav Generator (GNG) and all it sub-modules where created by the AeroNav Association.                        ;
@@ -51,7 +51,7 @@
 .cl Cleared to $arr, via $sid, runway $deprwy, initial climb altitude $alt, squawk $asquawk.
 .rrt Report ready for taxi. 
 .rft Are you ready for taxi?
-.tv Taxi via $1. 
+.tv Taxi via $1. QNH $altim($dep)
 .thp Taxi to holding point runway $deprwy via $1. QNH $altim($dep)
 .tts Taxi to stand $1 via $2. 
 .ttg Taxi to gate $1 via $2. 
