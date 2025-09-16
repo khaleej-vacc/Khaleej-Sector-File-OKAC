@@ -6424,7 +6424,7 @@ HESN	ASWAN INTL	Egypt
 HESX	GIZA/SPHINX INTL	Egypt
 HETB	TABA INTL	Egypt
 HETR	EL TOR	Egypt
-HEY0	Nouza (old Alexandria)	Egypt
+HEY0	Nouzha (old Alexandria)	Egypt
 HHAG	AGORDAT	Eritrea
 HHAL	ALGHENA	Eritrea
 HHAS	ASMARA INTL	Eritrea
