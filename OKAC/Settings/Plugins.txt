@@ -89,4 +89,15 @@ TopSky plugin:ACList/Traffic Management List 2/m_Resizable:1
 TopSky plugin:ACList/Traffic Management List 2/m_OrderingColumn:1
 TopSky plugin:ACList/Traffic Management List 2/m_Column_0: Callsign:10:0:10021:6:0:1:TopSky plugin:TopSky plugin:
 TopSky plugin:ACList/Traffic Management List 2/m_Column_1: CFL:5:0:10002:12:99:1:TopSky plugin:TopSky plugin:TopSky plugin
+CCAMS:ACList/Mode S EHS/m_Visible:0
+CCAMS:ACList/Mode S EHS/m_X:20
+CCAMS:ACList/Mode S EHS/m_Y:20
+CCAMS:ACList/Mode S EHS/m_LineNumber:1
+CCAMS:ACList/Mode S EHS/m_Resizable:1
+CCAMS:ACList/Mode S EHS/m_OrderingColumn:1
+CCAMS:ACList/Mode S EHS/m_Column_0:P:1:0:507:876:0:1:CCAMS:CCAMS:
+CCAMS:ACList/Mode S EHS/m_Column_1:C/S:8:0:9:8:7:1:::
+CCAMS:ACList/Mode S EHS/m_Column_2:HDG:5:1:502:0:0:1:CCAMS::
+CCAMS:ACList/Mode S EHS/m_Column_3:Roll:5:1:503:0:0:1:CCAMS::
+CCAMS:ACList/Mode S EHS/m_Column_4:GS:4:1:504:0:0:1:CCAMS::
 END
