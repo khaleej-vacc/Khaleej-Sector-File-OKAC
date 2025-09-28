@@ -4,108 +4,219 @@
         "runways": "33L,33R,15L,15R",
         "transAlt": 13000,
         "maxInitialClimb": 4000,
-        "customRules" : {},
-        "timeMode": false,
-        "timezone": "asia/Kuwait",
-        "appSI": "BKA,KAF,KR",
+        "appSI": "KAF, BKA, KR",
+        "enableRVSids": false,
         "sids": {
-            "climbvia": true,
-            "RALKA": {
-                "F": {
-                    "1": {
-                        "rwy": "33L,33R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
-                },
-                "E": {
-                    "1": {
-                        "rwy": "15L,15R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
-                }
-			},
             "ALVAX": {
-                "F": {
-                    "1": {
-                        "rwy": "33L,33R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "1": {
+                    "designator": "F",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
                 },
-                "E": {
-                    "1": {
-                        "rwy": "15L,15R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
-                }
-			},
-            "SESRU": {
-                "F": {
-                    "1": {
-                        "rwy": "33L,33R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
                 },
-                "E": {
-                    "1": {
-                        "rwy": "15L,15R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
-                }
-			},
-            "BOXIK": {
-                "F": {
-                    "1": {
-                        "rwy": "33L,33R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "3": {
+                    "designator": "E",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
                 },
-                "E": {
-                    "1": {
-                        "rwy": "15L,15R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
                 }
-			},
+            },
             "ASVIR": {
-                "F": {
-                    "1": {
-                        "rwy": "33L,33R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "1": {
+                    "designator": "F",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
                 },
-                "E": {
-                    "1": {
-                        "rwy": "15L,15R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
-                }
-			},
-            "KFR": {
-                "F": {
-                    "1": {
-                        "rwy": "33L,33R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
                 },
-                "E": {
-                    "1": {
-                        "rwy": "15L,15R",
-                        "initial": 4000,
-                        "prio": 1
-                    }
+                "3": {
+                    "designator": "E",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
                 }
-			}
+            },
+            "BOXIK": {
+                "1": {
+                    "designator": "F",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "3": {
+                    "designator": "E",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            },
+            "DEKOB": {
+                "1": {
+                    "designator": "J",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "3": {
+                    "designator": "L",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            },
+            "KATOD": {
+                "1": {
+                    "designator": "J",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "3": {
+                    "designator": "L",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            },
+            "NIDAP": {
+                "1": {
+                    "designator": "J",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "3": {
+                    "designator": "L",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            },
+            "RALKA": {
+                "1": {
+                    "designator": "E",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            },
+            "SESRU": {
+                "1": {
+                    "designator": "F",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "3": {
+                    "designator": "E",
+                    "rwy": "15R",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "4": {
+                    "designator": "K",
+                    "rwy": "16",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            },
+            "TASMI": {
+                "1": {
+                    "designator": "F",
+                    "rwy": "33L",
+                    "initial": 4000,
+                    "prio": 1
+                },
+                "2": {
+                    "designator": "I",
+                    "rwy": "34",
+                    "initial": 4000,
+                    "prio": 1
+                }
+            }
         }
     }
 }
