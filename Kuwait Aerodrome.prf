@@ -9,7 +9,7 @@ Settings	SettingsfileSEL	\OKAC\Settings\Lists.txt
 Settings	SettingsfileDEP	\OKAC\Settings\Lists.txt
 Settings	SettingsfileARR	\OKAC\Settings\Lists.txt
 Settings	SettingsfileFP	\OKAC\Settings\Lists.txt
-Settings	SettingsfilePLUGINS	\OKAC\Settings\Plugins.txt
+Settings	SettingsfilePLUGINS	\OKAC\Settings\PluginsAD.txt
 Settings	Settingsfile	\OKAC\Settings\GeneralAD.txt
 Settings	SettingsfileSCREEN	\OKAC\Settings\Screen.txt
 Settings	SettingsfileCONFLICT	\OKAC\Settings\Lists.txt
