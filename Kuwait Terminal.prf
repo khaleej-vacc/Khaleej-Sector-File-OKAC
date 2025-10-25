@@ -2,7 +2,7 @@ Settings	alias	\OKAC\Alias\alias.txt
 Settings	sector	\OKAC-Developer-Package_20251013160352-251002-0002.sct
 Settings	SettingsfileSYMBOLOGY	\OKAC\Settings\Symbology.txt
 Settings	SettingsfileVOICE	\OKAC\Settings\VoiceChannels.txt
-Settings	SettingsfilePROFILE	\OKAC\Settings\Profiles - ACC.txt
+Settings	SettingsfilePROFILE	\OKAC\Settings\Profiles - TMA.txt
 Settings	SettingsfileTAGS	\OKAC\Settings\Tags.txt
 Settings	SettingsfileSIL	\OKAC\Settings\Lists - ACC.txt
 Settings	SettingsfileSEL	\OKAC\Settings\Lists - ACC.txt
