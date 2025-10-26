@@ -1,0 +1,24 @@
+{
+    "OKAS": {
+        "elevation": 472,
+        "runways": "30L,12R,30R,12L",
+        "transAlt": 13000,
+        "maxInitialClimb": 4000,
+        "appSI": "KAF, BKA, KR",
+        "enableRVSids": false,
+        "sids": {
+            "ROSKE": {
+                "1": {
+					"3": {
+						"rwy": "30L,30R",
+						"initial": 4000,
+						"prio": 1	
+					}
+                }
+            }
+        }
+    }
+}
+
+
+
