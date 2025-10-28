@@ -3,15 +3,15 @@ PROFILE:[INITIALS]_OBS:100:0
 ATIS2:"Kuwait Observer"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAC_CTR:201:6
+PROFILE:OKAC_CTR:300:6
 ATIS2:"Kuwait Radar"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAC_U_CTR:201:6
+PROFILE:OKAC_U_CTR:300:6
 ATIS2:"Kuwait Upper"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAC_ACC_FMP:201:6
+PROFILE:OKAC_ACC_FMP:300:6
 ATIS2:"Kuwait Radar Flow Manager"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
