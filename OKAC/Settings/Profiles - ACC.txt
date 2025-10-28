@@ -1,5 +1,5 @@
 PROFILE
-PROFILE:[INITIALS]_OBS:100:0
+PROFILE:[INITIALS]_OBS:300:0
 ATIS2:"Kuwait Observer"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
