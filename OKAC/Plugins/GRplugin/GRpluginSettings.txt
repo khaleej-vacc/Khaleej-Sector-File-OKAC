@@ -113,6 +113,8 @@ Airport_Runway_Buffer_LVP=33R:175
 Airport_Runway_Buffer_LVP=33L:175
 Airport_Runway_Buffer_LVP=15R:175
 Airport_Runway_Buffer_LVP=15L:175
+Airport_Runway_Buffer_LVP=34:175
+Airport_Runway_Buffer_LVP=16:175
 
 System_CMAC_HighSpeed_Info=25
 System_CMAC_HighSpeed=40
@@ -122,6 +124,8 @@ AppPath=OKKK:33L:N029.12.46.477:E047.58.34.076:332:L:206:3.0
 AppPath=OKKK:33R:N029.12.46.093:E047.59.54.570:332:L:206:3.0
 AppPath=OKKK:15L:N029.14.25.317:E047.57.41.718:152:R:206:3.0
 AppPath=OKKK:15R:N029.14.27.884:E047.59.00.519:152:R:206:3.0
+AppPath=OKKK:34:N029.11.27.082:E047.57.42.509:331:L:206:3.0
+AppPath=OKKK:16:N029.13.41.902:E047.56.30.851:151:R:206:3.0
 
 Window_APP=1,1720,45,200,910
 Window_APP=1,1720,45,200,910
@@ -131,6 +135,8 @@ Window_APW=15R,2/15R
 Window_APW=15L,2/15L
 Window_APW=33R,2/33R
 Window_APW=33L,2/33L
+Window_APW=34,2/34
+Window_APW=16,2/16
 Window_APP_Scale=40
 Airport_Dep_Transfer_Height=1000
 Airport_Dep_Transfer_Dist=2
