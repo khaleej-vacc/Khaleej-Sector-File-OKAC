@@ -1,26 +1,6 @@
 PROFILE
-PROFILE:OKAJ_TWR:50:4
-ATIS2:"Al Jaber Tower"
-ATIS3:Give us feedback! - vats.im/khatcfdb
-ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAS_GND:20:3
-ATIS2:"Al Salem Ground"
-ATIS3:Give us feedback! - vats.im/khatcfdb
-ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKAS_TWR:50:4
-ATIS2:"Al Salem Tower"
-ATIS3:Give us feedback! - vats.im/khatcfdb
-ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKKK_GMP_FMP:10:2
-ATIS2:"Kuwait Planner"
-ATIS3:Request clearance 10 minutes before departure.
-ATIS4:Give us feedback! - vats.im/khatcfdb
-PROFILE:OKKK_GMC_FMP:20:3
-ATIS2:"Kuwait Ground Flow Manager"
-ATIS3:Give us feedback! - vats.im/khatcfdb
-ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKKK_AIR_FMP:20:4
-ATIS2:"Kuwait Tower Flow Manager"
+PROFILE:[INITIALS]_OBS:300:0
+ATIS2:"Kuwait Observer"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_DEL:10:2
@@ -35,12 +15,32 @@ PROFILE:OKKK_2_GND:20:3
 ATIS2:"Kuwait Ground"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:OKKK_TWR:40:4
+PROFILE:OKKK_TWR:50:4
 ATIS2:"Kuwait Tower"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
-PROFILE:[INITIALS]_OBS:300:0
-ATIS2:"Kuwait Observer"
+PROFILE:OKKK_GMP_FMP:10:2
+ATIS2:"Kuwait Planner"
+ATIS3:Request clearance 10 minutes before departure.
+ATIS4:Give us feedback! - vats.im/khatcfdb
+PROFILE:OKKK_GMC_FMP:20:3
+ATIS2:"Kuwait Ground Flow Manager"
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKKK_AIR_FMP:20:4
+ATIS2:"Kuwait Tower Flow Manager"
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKAJ_TWR:50:4
+ATIS2:"Al Jaber Tower"
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKAS_GND:20:3
+ATIS2:"Al Salem Ground"
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKAS_TWR:50:4
+ATIS2:"Al Salem Tower"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 END
