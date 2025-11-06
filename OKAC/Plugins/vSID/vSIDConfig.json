@@ -1,5 +1,5 @@
 {
-    "airportConfigs": "../vSID Airportconfig",
+    "airportConfigs": "vSID Airportconfig",
     "preferTopsky": true,
     "esePath": "../../..",
     "colors": {
@@ -146,3 +146,4 @@
         "indicatorShowBelowZoom": 600
     }
 }
+
