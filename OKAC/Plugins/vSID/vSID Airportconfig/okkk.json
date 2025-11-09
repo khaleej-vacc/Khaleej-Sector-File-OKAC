@@ -4,7 +4,7 @@
         "runways": "33L,33R,15L,15R,16,34",
         "transAlt": 13000,
         "maxInitialClimb": 4000,
-        "intersections": {"15R": "LOOP, M15, M14, W5, W4", "33L": "LOOP, W2", "15L": "LOOP1, LOOP2", "33R": "LOOP1, E2, E2", "16": "V8, V9, V10", "34": "V1, V2, V3"},
+        "intersections": {"15R": "W15, W18, M15, M14, W5, W4", "33L": "W1, W2", "15L": "LP1, LP2", "33R": "LP1, LP2, E2", "16": "V8, V9, V10", "34": "V1, V2, V3"},
         "appSI": "KAF, BKA, KR",
         "enableRVSids": false,
         "sids": {
