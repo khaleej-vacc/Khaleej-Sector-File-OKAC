@@ -7,19 +7,15 @@
         "appSI": "KAF, BKA, KR",
         "enableRVSids": false,
         "sids": {
-            "ROSKE": {
-                "3": {
+            "ROSKE3": {
+				"1": {
 					"1": {
 						"rwy": "30L,30R",
 						"initial": 4000,
-						"prio": 1	
+						"prio": 1
 					}
-                }
+				}
             }
         }
     }
 }
-
-
-
-
