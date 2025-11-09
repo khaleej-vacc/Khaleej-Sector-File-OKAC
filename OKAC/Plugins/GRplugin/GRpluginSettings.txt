@@ -27,6 +27,8 @@ AppLabel_Font=EuroScope
 AppLabel_FontSize=11
 AppLabel_Transparency_Bg=85
 
+GroundLabel_Filter_NoState=1
+
 Label=GND:ARR:0:ALRT,0,0:COMM,0,1 
 Label=GND:ARR:1:ATYP,0,0:WTC,0,1,0
 Label=GND:ARR:2:CALLSIGN,0,0:STAND,0,1 
@@ -140,4 +142,3 @@ Window_APW=16,2/16
 Window_APP_Scale=40
 Airport_Dep_Transfer_Height=1000
 Airport_Dep_Transfer_Dist=2
-
