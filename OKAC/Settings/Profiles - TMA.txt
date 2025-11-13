@@ -15,6 +15,10 @@ PROFILE:OKKK_FX_APP:150:5
 ATIS2:"Kuwait Director" - CONTACT WITH CALLSIGN ONLY!
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
+PROFILE:OKAJ_APP:150:5
+ATIS2:"Al Jaber Control" - Covering OKAS and OKAJ.
+ATIS3:Give us feedback! - vats.im/khatcfdb
+ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_TMA_FMP:150:5
 ATIS2:"Kuwait Approach Flow Manager"
 ATIS3:Give us feedback! - vats.im/khatcfdb
