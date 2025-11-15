@@ -1,4 +1,4 @@
-[
+﻿[
 {"ICAO":"A002","Description":"G1P","WTC":"L","WTG":"G","RECAT-EU":"F","Wingspan":9.8,"Length":4.98,"Height":3.17,"MTOW":800,"Use":"H","Manufacturer":"IRKUT","Model":"A-002"},
 {"ICAO":"A1","Description":"L1P","WTC":"M","WTG":"G","RECAT-EU":"F","Wingspan":15.2464,"Length":11.84,"Height":4.7816,"MTOW":8213,"Use":"M","Manufacturer":"DOUGLAS","Model":"Skyraider"},
 {"ICAO":"A10","Description":"L2J","WTC":"M","WTG":"F","RECAT-EU":"E","Wingspan":17.5,"Length":16.3,"Height":4.5,"MTOW":22700,"Use":"M","Manufacturer":"FAIRCHILD","Model":"A-10 Thunderbolt 2"},
