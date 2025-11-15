@@ -5,16 +5,12 @@ Track_HistoryDots_GND=3
 
 Color_Arrival=253,236,166
 Color_Departure=166,253,190
-Color_Background=12,13,14
 Color_RawVideo=255,255,0
 Color_Unknown=233,234,235
-Color_RunwayExtension=174,174,174
 Color_SelectedLabelFill_App=0,0,0
 Color_SelectedLabelFill_Gnd=0,0,0
-Color_RunwayExtension=72,73,75
 Window_APP_Scale=11
 Window_APP_AltFilter=6000
-Window_APP=1,1429,42,490,457
 
 Maps_FontSize=10
 GroundLabel_Font=EuroScope
@@ -68,7 +64,8 @@ System_State_OnFreq=SBY
 System_State_DeIce=HPO
 System_State_StartUp=S/U
 System_State_Push=P/S
-System_State_Taxi=TAX
+System_State_Taxi_Out=T/X
+System_State_Taxi_In=T/X
 System_State_LineUp=L/U
 System_State_Depa=T/O
 
@@ -105,8 +102,6 @@ List_Departure_STAND=1
 List_Departure_EOBT=1
 List_Departure_Items=30
 Window_APW_DefPos=1350,45
-Window_2nd=0,1070,670,600,280
-Window_2nd_Scale=220
 [OKKK]
 
 Airport_Elevation=206
@@ -129,8 +124,6 @@ AppPath=OKKK:15R:N029.14.27.884:E047.59.00.519:152:R:206:3.0
 AppPath=OKKK:34:N029.11.27.082:E047.57.42.509:331:L:206:3.0
 AppPath=OKKK:16:N029.13.41.902:E047.56.30.851:151:R:206:3.0
 
-Window_APP=1,1720,45,200,910
-Window_APP=1,1720,45,200,910
 Window_APP_Rotation=24
 Window_APP_AltFilter=4000
 Window_APW=15R,2/15R
