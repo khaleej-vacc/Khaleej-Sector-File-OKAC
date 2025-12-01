@@ -46,7 +46,7 @@ Sounds	Sound17	\OKAC\Sounds\pointout.wav
 Sounds	Sound18	\OKAC\Sounds\startup.wav
 Plugins	Plugin0	\OKAC\Plugins\DiscordEuroScope\DiscordEuroscope.dll
 Plugins	Plugin1	\OKAC\Plugins\Audio for VATSIM\AfvEuroScopeBridge.dll
-Plugins	Plugin2	\OKAC\Plugins\TopSky\TopSky.dll
+Plugins	Plugin2	\OKAC\Plugins\TopSky TMA\TopSky.dll
 Plugins	Plugin3	\OKAC\Plugins\MAESTRO\MAESTRO.dll
 Plugins	Plugin4	\OKAC\Plugins\GRplugin\GRplugin.dll
 Plugins	Plugin4Display0	Ground Radar display
