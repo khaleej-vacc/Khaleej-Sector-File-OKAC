@@ -95,10 +95,10 @@ m_LineNumber:0
 m_Resizable:1
 m_OrderingColumn:1
 m_HeaderOnly:0
-m_Column:CTL:7:1:640:0:0:1:VCH:::0:0.0
 m_Column:C/S:9:1:22:0:0:1:TopSky plugin:::0:0.0
 m_Column:ACFT:5:1:69:0:0:1:TopSky plugin:::0:0.0
 m_Column:STAND:7:1:2:1:0:1:Ground Radar plugin:Ground Radar plugin::0:0.0
+m_Column:CTL:7:1:646:745:745:1:vSID:vSID:vSID:0:0.0
 m_Column:TXT:6:1:19:29:0:1::::1:0.0
 END
 FP
@@ -250,3 +250,4 @@ m_Column:STN:4:1:19:29:0:1::::1:0.0
 m_Column:ATYP:4:1:16:0:0:1::::1:0.0
 m_Column:STS:4:1:59:46:46:1::::1:0.0
 END
+
