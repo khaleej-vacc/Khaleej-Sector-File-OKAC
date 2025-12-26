@@ -163,7 +163,7 @@
                ]
             }
          ],
-         "KFR": [
+         "DEKOB": [
             {
                "direction": "EVEN",
                "destinations": [
@@ -176,6 +176,14 @@
                   "P517"
                ]
             },
+            {
+               "direction": "EVEN",
+               "airways": [
+                  "P517",
+               ]
+            }
+         ],
+         "NIDAP": [
             {
                "direction": "EVEN",
                "destinations": [
@@ -200,6 +208,15 @@
             },
             {
                "direction": "EVEN",
+               "airways": [
+                  "L550",
+                  "DCT",
+               ]
+            }
+         ],
+         "KATOD": [
+            {
+               "direction": "EVEN",
                "destinations": [
                   "HSPN",
                   "OERK",
@@ -215,9 +232,6 @@
             {
                "direction": "EVEN",
                "airways": [
-                  "P517",
-                  "L550",
-                  "DCT",
                   "G782",
                   "Y517",
                   "G667"
