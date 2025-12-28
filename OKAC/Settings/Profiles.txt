@@ -4,31 +4,31 @@ ATIS2:"Kuwait Observer"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_DEL:10:2
-ATIS2:"Kuwait Delivery"
+ATIS2:"Kuwait Delivery" - DCL [OKKK]
 ATIS3:Request clearance 10 minutes before departure.
 ATIS4:Give us feedback! - vats.im/khatcfdb
 PROFILE:OKKK_1_GND:20:3
-ATIS2:"Kuwait Ground"
+ATIS2:"Kuwait Ground" - DCL [OKKK]
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_2_GND:20:3
-ATIS2:"Kuwait Ground"
+ATIS2:"Kuwait Ground" - DCL [OKKK]
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_TWR:50:4
-ATIS2:"Kuwait Tower"
+ATIS2:"Kuwait Tower" - DCL [OKKK]
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_GMP_FMP:10:2
-ATIS2:"Kuwait Planner"
+ATIS2:"Kuwait Planner" - DCL [OKKK]
 ATIS3:Request clearance 10 minutes before departure.
 ATIS4:Give us feedback! - vats.im/khatcfdb
 PROFILE:OKKK_GMC_FMP:20:3
-ATIS2:"Kuwait Ground Flow Manager"
+ATIS2:"Kuwait Ground Flow Manager" - DCL [OKKK]
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_AIR_FMP:20:4
-ATIS2:"Kuwait Tower Flow Manager"
+ATIS2:"Kuwait Tower Flow Manager" - DCL [OKKK]
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKAJ_TWR:50:4
