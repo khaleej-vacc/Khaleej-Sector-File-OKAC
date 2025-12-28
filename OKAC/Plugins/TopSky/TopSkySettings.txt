@@ -188,6 +188,11 @@ Track_PredictionLine=0
 
 RwyAppLines_Auto=0
 
+List_TfcMgmt1_ADES=OKKK
+List_TfcMgmt1_FPstate=3
+List_TfcMgmt_MaxTime=60
+List_TfcMgmt_MinState=1
+
 // Colors
 Color_Unconcerned=131,131,131
 Color_Coordination=180,180,180
