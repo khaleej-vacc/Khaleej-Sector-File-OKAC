@@ -89,6 +89,10 @@ Plugins	Plugin11	\OKAC\Plugins\vSID\vSID.dll
 Plugins	Plugin11Display0	Standard ES radar screen
 Plugins	Plugin11Display1	DelHel
 Plugins	Plugin11Display2	Ground Radar display
+Plugins	Plugin12	\OKAC\Plugins\P21Euroscope.dll
+Plugins	Plugin12Display0	DelHel
+Plugins	Plugin12Display1	Ground Radar display
+Plugins	Plugin12Display2	Standard ES radar screen
 LastSession	connecttype	0
 LastSession	callsign	[INITIALS]_OBS
 LastSession	facility	0
