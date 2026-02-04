@@ -8,11 +8,11 @@
 	<autoAtot mode="false" />
 	<invalidateAtTsat mode="true" />
 	<invalidateAtTobt mode="true" />
-	<Rates url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OBBB/refs/heads/main/OBBB/Plugins/CDM/rate.txt" />
-	<Taxizones url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OBBB/refs/heads/main/OBBB/Plugins/CDM/taxizones.txt" />
-	<Ctot url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OBBB/refs/heads/main/OBBB/Plugins/CDM/CTOT.txt" />
-	<sidInterval url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OBBB/refs/heads/main/OBBB/Plugins/CDM/SidInterval.txt" />
-	<DefaultTaxiTime minutes="6" />
+	<Rates url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/rate.txt" />
+	<Taxizones url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/taxizones.txt" />
+	<Ctot url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/CTOT.txt" />
+	<sidInterval url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/SidInterval.txt" />
+	<DefaultTaxiTime minutes="13" />
 	<DeIceTimes light="5" medium="9" heavy="12" super="15"/>
 	<DeIceRemTaxi rem1Name= "REM1" rem1="10" rem2Name= "REM2" rem2="10" rem3Name= "REM3" rem3="10" rem4Name= "REM4" rem4="10" rem5Name= "REM5" rem5="10"/>
 	<RefreshTime seconds="10" />
