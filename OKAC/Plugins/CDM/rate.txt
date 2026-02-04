@@ -1,2 +1,2 @@
 # AIRPORT:A:ArrRwyList:NotArrRwyList:D:DepRwyList:NotDepRwyList:DependentRwyList:Rate_RateLvo
-OBBI:A:*:*:D:*:*:*:20_10
+OKKK:A:*:*:D:*:*:*:20_10
