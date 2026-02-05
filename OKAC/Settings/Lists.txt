@@ -64,11 +64,14 @@ m_HeaderOnly:0
 m_Column:REQ:4:1:546:548:548:1:VCH:VCH:VCH:0:0.0
 m_Column:PRT:3:1:544:346:0:0:VCH:VCH::0:0.0
 m_Column:POS:4:1:1:0:0:1:Ground Radar plugin:::0:0.0
+m_Column:CTOT:5:1:10:108:108:0:CDM Plugin:CDM Plugin:CDM Plugin:0:0.0
+m_Column:EOBT:5:1:1:120:100:0:CDM Plugin:CDM Plugin:CDM Plugin:0:0.0
+m_Column:TOBT:5:1:4:121:115:0:CDM Plugin:CDM Plugin:CDM Plugin:0:0.0
+m_Column:TSAT:5:1:2:0:0:0:CDM Plugin:::0:0.0
 m_Column:WT:2:1:10032:0:0:1:TopSky plugin:::1:0.0
 m_Column:ATYP:5:1:10028:0:0:1:TopSky plugin:::1:0.0
 m_Column:FR:3:1:63:0:0:1::::0:0.0
 m_Column:C/S:9:1:10021:6:4:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
-m_Column:CTOT:5:1:5001:0:0:0:VATCAN Bookings:::0:0.0
 m_Column:ADES:4:1:10008:1001:39:1:TopSky plugin:TopSky plugin:TopSky plugin:1:0.0
 m_Column:RFL:4:1:10006:59:0:1:TopSky plugin:TopSky plugin::1:0.0
 m_Column:SID:15:1:641:741:742:1:vSID:vSID:vSID:0:0.0
@@ -126,5 +129,6 @@ m_Column:C/S:7:0:85:0:36:1::::9:0.0
 m_Column:START:6:1:86:0:36:1::::9:0.0
 m_Column:END:6:1:87:0:36:1::::9:0.0
 END
+
 
 
