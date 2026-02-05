@@ -4,7 +4,7 @@ ATIS2:"Kuwait Observer"
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_APP:150:5
-ATIS2:"Kuwait Approach" - DCL [OKKK]
+ATIS2:"Kuwait Approach" - DCL [OKKK] | TOBT @ vats.im/vdgs
 ATIS3:Give us feedback! - vats.im/khatcfdb
 ATIS4:Welcome to Kuwait | Visit khaleejvacc.net
 PROFILE:OKKK_F_APP:150:5
