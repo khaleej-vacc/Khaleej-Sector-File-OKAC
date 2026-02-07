@@ -5,7 +5,7 @@
 	<expiredCtot time="25" />
 	<realMode mode="true" />
 	<pilotTobt mode="true" />
-	<autoAtot mode="false" />
+	<autoAtot mode="true" />
 	<invalidateAtTsat mode="true" />
 	<invalidateAtTobt mode="true" />
 	<Rates url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/rate.txt" />
