@@ -7,7 +7,7 @@
 	<pilotTobt mode="true" />
 	<autoAtot mode="true" />
 	<invalidateAtTsat mode="true" />
-	<invalidateAtTobt mode="true" />
+	<invalidateAtTobt mode="false" />
 	<Rates url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/rate.txt" />
 	<Taxizones url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/taxizones.txt" />
 	<Ctot url="https://raw.githubusercontent.com/khaleej-vacc/Khaleej-Sector-File-OKAC/refs/heads/main/OKAC/Plugins/CDM/CTOT.txt" />
