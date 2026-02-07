@@ -1,229 +1,288 @@
 [
-   {
-      "icao": "OKKK",
-      "sids": {
-         "SESRU": [
-            {
-               "direction": "ODD",
-               "destinations": [
-                  "OMDB",
-                  "OMDW",
-                  "OMSJ",
-                  "OISS",
-                  "OOMS",
-                  "OAKB",
-                  "OPKC",
-                  "OPIS",
-                  "OPST",
-                  "OPLA",
-                  "UTDD",
-                  "UTTT",
-                  "UTFN",
-                  "UCFO",
-                  "UCFM",
-                  "VIDP",
-                  "VABB",
-                  "VOHS",
-                  "VNKT",
-                  "VGHS",
-                  "VCBI"
-               ],
-               "airways": [
-                  "M677",
-                  "G669"
-               ]
-            },
-            {
-               "direction": "ODD",
-               "airways": [
-                  "M677",
-                  "G669"
-               ]
-            }
-         ],
-         "BOXIK": [
-            {
-               "direction": "ODD",
-               "destinations": [
-                  "OMAA",
-                  "OISL",
-                  "UAAA",
-                  "VAAH",
-                  "VOCI",
-                  "VOTV",
-                  "VOBL",
-                  "VOMM"
-               ],
-               "airways": [
-                  "B416",
-                  "A788"
-               ]
-            },
-            {
-               "direction": "ODD",
-               "max_fl": 270,
-               "destinations": [
-                  "OBBI"
-               ],
-               "airways": [
-                  "B416"
-               ]
-            },
-            {
-               "direction": "ODD",
-               "max_fl": 290,
-               "destinations": [
-                  "OTHH"
-               ],
-               "airways": [
-                  "B416"
-               ]
-            },
-            {
-               "direction": "ODD",
-               "airways": [
-                  "M677",
-                  "G669"
-               ]
-            }
-         ],
-         "ASVIR": [
-            {
-               "direction": "ODD",
-               "max_fl": 250,
-               "destinations": [
-                  "OEDF"
-               ],
-               "airways": [
-                  "H741"
-               ]
-            },
-            {
-               "direction": "ODD",
-               "airways": [
-                  "H741"
-               ]
-            }
-         ],
-         "ALVAX": [
-            {
-               "direction": "ODD",
-               "destinations": [
-                  "OIFM",
-                  "OIIE",
-                  "UGTB",
-                  "UBBB",
-                  "UUDD"
-               ],
-               "airways": [
-                  "B417"
-               ]
-            },
-            {
-               "direction": "ODD",
-               "airways": [
-                  "B417"
-               ]
-            }
-         ],
-         "RALKA": [
-            {
-               "direction": "EVEN",
-               "destinations": [
-                  "EDDF",
-                  "EGLL",
-                  "LFPG",
-                  "LIRF",
-                  "LTFJ",
-                  "LTFM",
-                  "LSGG",
-                  "OSDI",
-                  "ORBI"
-               ],
-               "airways": [
-                  "L602",
-                  "G795"
-               ]
-            },
-            {
-               "direction": "EVEN",
-               "max_fl": 260,
-               "destinations": [
-                  "ORNI"
-               ],
-               "airways": [
-                  "G795"
-               ]
-            },
-            {
-               "direction": "EVEN",
-               "airways": [
-                  "L602",
-                  "G795"
-               ]
-            }
-         ],
-         "KFR": [
-            {
-               "direction": "EVEN",
-               "destinations": [
-                  "HAAB",
-                  "OEGS",
-                  "OEMA",
-                  "OEJN"
-               ],
-               "airways": [
-                  "P517"
-               ]
-            },
-            {
-               "direction": "EVEN",
-               "destinations": [
-                  "DAAG",
-                  "HEBA",
-                  "HECA",
-                  "HEAT",
-                  "HESG",
-                  "HELX",
-                  "HESH",
-                  "HESN",
-                  "LCLK",
-                  "LTAI",
-                  "OLBA",
-                  "OJAI",
-                  "OEHL"
-               ],
-               "airways": [
-                  "L550",
-                  "DCT"
-               ]
-            },
-            {
-               "direction": "EVEN",
-               "destinations": [
-                  "HSPN",
-                  "OERK",
-                  "OETF",
-                  "OYAA"
-               ],
-               "airways": [
-                  "G782",
-                  "Y517",
-                  "G667"
-               ]
-            },
-            {
-               "direction": "EVEN",
-               "airways": [
-                  "P517",
-                  "L550",
-                  "DCT",
-                  "G782",
-                  "Y517",
-                  "G667"
-               ]
-            }
-         ]
-   }
-}
+  {
+    "icao": "OKKK",
+    "sids": {
+      "SESRU": [
+        {
+          "direction": "ODD",
+          "destinations": [
+            "OMDB",
+            "OMDW",
+            "OMSJ",
+            "OISS",
+            "OOMS",
+            "OAKB",
+            "OPKC",
+            "OPIS",
+            "OPST",
+            "OPLA",
+            "UTDD",
+            "UTTT",
+            "UTFN",
+            "UCFO",
+            "UCFM",
+            "VIDP",
+            "VABB",
+            "VOHS",
+            "VNKT",
+            "VGHS",
+            "VCBI"
+          ],
+          "airways": [
+            "M677",
+            "G669"
+          ]
+        },
+        {
+          "direction": "ODD",
+          "airways": [
+            "M677",
+            "G669"
+          ]
+        }
+      ],
+
+      "BOXIK": [
+        {
+          "direction": "ODD",
+          "destinations": [
+            "OMAA",
+            "OISL",
+            "UAAA",
+            "VAAH",
+            "VOCI",
+            "VOTV",
+            "VOBL",
+            "VOMM"
+          ],
+          "airways": [
+            "B416",
+            "A788"
+          ]
+        },
+        {
+          "direction": "ODD",
+          "max_fl": 270,
+          "destinations": [
+            "OBBI"
+          ],
+          "airways": [
+            "B416"
+          ]
+        },
+        {
+          "direction": "ODD",
+          "max_fl": 290,
+          "destinations": [
+            "OTHH"
+          ],
+          "airways": [
+            "B416"
+          ]
+        },
+        {
+          "direction": "ODD",
+          "airways": [
+            "M677",
+            "G669"
+          ]
+        }
+      ],
+
+      "ASVIR": [
+        {
+          "direction": "ODD",
+          "max_fl": 250,
+          "destinations": [
+            "OEDF"
+          ],
+          "airways": [
+            "H741"
+          ]
+        },
+        {
+          "direction": "ODD",
+          "airways": [
+            "H741"
+          ]
+        }
+      ],
+
+      "ALVAX": [
+        {
+          "direction": "ODD",
+          "destinations": [
+            "OIFM",
+            "OIIE",
+            "UGTB",
+            "UBBB",
+            "UUDD"
+          ],
+          "airways": [
+            "B417"
+          ]
+        },
+        {
+          "direction": "ODD",
+          "airways": [
+            "B417"
+          ]
+        }
+      ],
+
+      "RALKA": [
+        {
+          "direction": "EVEN",
+          "destinations": [
+            "EDDF",
+            "EGLL",
+            "LFPG",
+            "LIRF",
+            "LTFJ",
+            "LTFM",
+            "LSGG",
+            "OSDI",
+            "ORBI"
+          ],
+          "airways": [
+            "L602",
+            "G795"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "max_fl": 260,
+          "destinations": [
+            "ORNI"
+          ],
+          "airways": [
+            "G795"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "airways": [
+            "L602",
+            "G795"
+          ]
+        }
+      ],
+
+      "TASMI": [
+        {
+          "direction": "EVEN",
+          "destinations": [
+            "EDDF",
+            "EGLL",
+            "LFPG",
+            "LIRF",
+            "LTFJ",
+            "LTFM",
+            "LSGG",
+            "OSDI",
+            "ORBI"
+          ],
+          "airways": [
+            "L602",
+            "G795"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "max_fl": 260,
+          "destinations": [
+            "ORNI"
+          ],
+          "airways": [
+            "G795"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "airways": [
+            "L602",
+            "G795"
+          ]
+        }
+      ],
+
+      "DEKOB": [
+        {
+          "direction": "EVEN",
+          "destinations": [
+            "HAAB",
+            "OEGS",
+            "OEMA",
+            "OEJN"
+          ],
+          "airways": [
+            "P517"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "airways": [
+            "P517"
+          ]
+        }
+      ],
+
+      "NIDAP": [
+        {
+          "direction": "EVEN",
+          "destinations": [
+            "DAAG",
+            "HEBA",
+            "HECA",
+            "HEAT",
+            "HESG",
+            "HELX",
+            "HESH",
+            "HESN",
+            "LCLK",
+            "LTAI",
+            "OLBA",
+            "OJAI",
+            "OEHL"
+          ],
+          "airways": [
+            "L550",
+            "DCT"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "airways": [
+            "L550",
+            "DCT"
+          ]
+        }
+      ],
+
+      "KATOD": [
+        {
+          "direction": "EVEN",
+          "destinations": [
+            "HSPN",
+            "OERK",
+            "OETF",
+            "OYAA"
+          ],
+          "airways": [
+            "G782",
+            "Y517",
+            "G667"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "airways": [
+            "G782",
+            "Y517",
+            "G667"
+          ]
+        }
+      ]
+    }
+  }
 ]
