@@ -195,13 +195,13 @@ List_TfcMgmt_MinState=1
 
 // Colors
 Color_Unconcerned=131,131,131
-Color_Coordination=180,180,180
+Color_Coordination=255,255,255
 Color_Proposition_Accepted=0,232,0
 Color_Proposition_In=255,130,180
 Color_Proposition_Out=0,130,180
 Color_Proposition=255,130,180
 Color_Assumed=125,255,125
-Color_Redundant=255,255,255
+Color_Redundant=28,232,229
 Color_Information=0,232,0
 Color_Information_FL=41,245,41
 Color_Informed=175,125,175
