@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=./settings.schema.yaml
+
+timelines:
+  OBBI:
+    - timelineTitle: "30R"
+      arrivalLabelLayoutId: bahArr
+      right:
+        runways: ["30R"]
+
+    - timelineTitle: "12L"
+      arrivalLabelLayoutId: bahArr
+      right:
+        runways: ["12L"]
+
+arrivalLabelLayouts:
+  bahArr:
+    - {src: assignedRunway, w: 4}
+    - {src: assignedStar, w: 4, maxLen: 3}
+    - {src: callSign, w: 8}
+    - {src: aircraftType, w: 5}
+    - {src: wakeCategory, w: 2}
+    - {src: timeToLoseOrGain, w: 4, align: right}
+    - {src: distanceBehindPreceding, w: 5, align: right}
+
+  simpleLayout:
+    - {src: assignedRunway, w: 4}
+    - {src: callSign, w: 8}
+
+connectionConfig:
+  atcClient:
+    host: "localhost"
+    port: 12345
+  masterSlaveApi:
+    host: "https://aman-dman-api.fly.dev"
+
+theme: "JTattoo"

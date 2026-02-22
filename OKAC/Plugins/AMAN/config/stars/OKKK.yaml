@@ -1,0 +1,79 @@
+# yaml-language-server: $schema=./stars.schema.yaml
+
+stars:
+  - runway: 34
+    name: ASVIR1H
+    waypoints:
+      - { id: ASVIR, typicalAltitude: 12000, typicalSpeed: 250 }
+      - { id: KK022, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+
+  - runway: 34
+    name: DEBTI1H
+    waypoints:
+      - { id: DEBTI, typicalAltitude: 12000, typicalSpeed: 250 }
+      - { id: PEDEL, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+
+  - runway: 34
+    name: DESLU1H
+    waypoints:
+      - { id: DESLU, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: ALVAX, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: TABTO, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+
+  - runway: 34
+    name: KUNRU1H
+    waypoints:
+      - { id: KUNRU, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: KK021, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+      
+  - runway: 34
+    name: RALKA1H
+    waypoints:
+      - { id: RALKA, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: TABTO, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: TABTO, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+     
+  - runway: 34
+    name: SESRU1H
+    waypoints:
+      - { id: SESRU, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: KK023, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: TABTO, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+      
+  - runway: 34
+    name: SIDAD1H
+    waypoints:
+      - { id: SIDAD, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: KK038, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: ALVAX, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: TABTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }
+      
+  - runway: 34
+    name: SOROR1H
+    waypoints:
+      - { id: SOROR, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: KK020, typicalAltitude: 204000, typicalSpeed: 230 }
+      - { id: KK021, typicalAltitude: 6000, typicalSpeed: 230 }
+      - { id: PEDEL, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: IVOTO, typicalAltitude: 5500, typicalSpeed: 230 }
+      - { id: OKKK, typicalAltitude: 204 }

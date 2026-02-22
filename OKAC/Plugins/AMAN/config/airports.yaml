@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=./airports.schema.yaml
+
+airports:
+  OBBI:
+    location:
+      latitude: 26.270778611111
+      longitude: 50.633758333333
+    runwayThresholds:
+      30R:
+        location:
+          latitude: 26.262671944444
+          longitude: 50.647786111111
+        elevation: 8
+        trueHeading: 300
+      12L:
+        location:
+          latitude: 26.278983055556
+          longitude: 50.619521944444
+        elevation: 8
+        trueHeading: 120
+    independentRunwaySystems:
+      - ["30R"]
+      - ["12L"]
