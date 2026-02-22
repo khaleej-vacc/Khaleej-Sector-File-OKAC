@@ -1,23 +1,35 @@
 # yaml-language-server: $schema=./airports.schema.yaml
 
 airports:
-  OBBI:
+  OKKK:
     location:
-      latitude: 26.270778611111
-      longitude: 50.633758333333
+      latitude: 29.226759166667
+      longitude: 47.979928333333
     runwayThresholds:
-      30R:
+      34:
         location:
-          latitude: 26.262671944444
-          longitude: 50.647786111111
-        elevation: 8
-        trueHeading: 300
-      12L:
+          latitude: 29.190856111111
+          longitude: 47.961808055556
+        elevation: 173
+        trueHeading: 331
+      33L:
         location:
-          latitude: 26.278983055556
-          longitude: 50.619521944444
-        elevation: 8
-        trueHeading: 120
+          latitude: 29.212706111111
+          longitude: 47.976303055556
+        elevation: 169
+        trueHeading: 331
+      16:
+        location:
+          latitude: 29.228306111111
+          longitude: 47.941903055556
+        elevation: 166
+        trueHeading: 151
+      15R:
+        location:
+          latitude: 29.240521944444
+          longitude: 47.961518888889
+        elevation: 151
+        trueHeading: 133
     independentRunwaySystems:
-      - ["30R"]
-      - ["12L"]
+      - ["34", "33L"]
+      - ["16", "15R"]

@@ -1,19 +1,19 @@
 # yaml-language-server: $schema=./settings.schema.yaml
 
 timelines:
-  OBBI:
-    - timelineTitle: "30R"
-      arrivalLabelLayoutId: bahArr
+  OKKK:
+    - timelineTitle: "33L"
+      arrivalLabelLayoutId: kwiArr
       right:
-        runways: ["30R"]
+        runways: ["34", "33L"]
 
-    - timelineTitle: "12L"
-      arrivalLabelLayoutId: bahArr
+    - timelineTitle: "15R"
+      arrivalLabelLayoutId: kwiArr
       right:
-        runways: ["12L"]
+        runways: ["16", "15R"]
 
 arrivalLabelLayouts:
-  bahArr:
+  kwiArr:
     - {src: assignedRunway, w: 4}
     - {src: assignedStar, w: 4, maxLen: 3}
     - {src: callSign, w: 8}

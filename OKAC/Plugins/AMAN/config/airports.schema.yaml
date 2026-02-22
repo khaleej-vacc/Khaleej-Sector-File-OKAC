@@ -12,23 +12,24 @@ $defs:
             type: "string"
       location:
         $ref: "#/$defs/LocationJson"
+      lockedHorizon:
+        type: "string"
+        format: "duration"
       runwayThresholds:
         $ref: "#/$defs/Map(String,RunwayThresholdJson)"
+      sequencingHorizon:
+        type: "string"
+        format: "duration"
     required:
     - "location"
-    - "runwayThresholds"
     additionalProperties: false
   LocationJson:
     type: "object"
     properties:
       latitude:
         type: "number"
-        minimum: -90
-        maximum: 90
       longitude:
         type: "number"
-        minimum: -180
-        maximum: 180
     additionalProperties: false
   Map(String,AirportJson):
     type: "object"
@@ -43,13 +44,10 @@ $defs:
     properties:
       elevation:
         type: "number"
-        minimum: 0
       location:
         $ref: "#/$defs/LocationJson"
       trueHeading:
         type: "number"
-        minimum: 0
-        maximum: 360
     required:
     - "location"
     additionalProperties: false
@@ -57,7 +55,6 @@ type: "object"
 properties:
   airports:
     $ref: "#/$defs/Map(String,AirportJson)"
-    minProperties: 1
 required:
 - "airports"
 additionalProperties: false
