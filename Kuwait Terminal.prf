@@ -108,3 +108,7 @@ Plugins	Plugin13	\OKAC\Plugins\CDM\CDM.dll
 Plugins	Plugin13Display0	DelHel
 Plugins	Plugin13Display1	Standard ES radar screen
 Plugins	Plugin13Display2	Ground Radar display
+Plugins	Plugin14	\OKAC\Plugins\AMAN\Aman.dll
+Plugins	Plugin14Display0	DelHel
+Plugins	Plugin14Display1	Ground Radar display
+Plugins	Plugin14Display2	Standard ES radar screen
