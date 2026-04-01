@@ -58,10 +58,6 @@ Plugins	Plugin5Display0	Ground Radar display
 Plugins	Plugin5Display1	Standard ES radar screen
 Plugins	Plugin6	\OKAC\Plugins\VFPC\VFPC.dll
 Plugins	Plugin6Display0	DelHel
-Plugins	Plugin7	\OKAC\Plugins\Delivery Helper\DelHel.dll
-Plugins	Plugin7Display0	DelHel
-Plugins	Plugin7Display1	Ground Radar display
-Plugins	Plugin7Display2	Standard ES radar screen
 Plugins	Plugin8	\OKAC\Plugins\vSID\vSID.dll
 Plugins	Plugin8Display0	DelHel
 Plugins	Plugin8Display1	Ground Radar display
