@@ -65,10 +65,6 @@ Settings	SettingsfileADCS	\OKAC\Settings\Lists - ACC.txt
 Settings	SettingsfileTAXIIN	\OKAC\Settings\Lists - ACC.txt
 Plugins	Plugin5Display1	Ground Radar display
 Plugins	Plugin5Display2	Standard ES radar screen
-Plugins	Plugin6	\OKAC\Plugins\Delivery Helper\DelHel.dll
-Plugins	Plugin6Display0	DelHel
-Plugins	Plugin6Display1	Ground Radar display
-Plugins	Plugin6Display2	Standard ES radar screen
 Plugins	Plugin7	\OKAC\Plugins\VFPC\VFPC.dll
 Plugins	Plugin7Display0	DelHel
 Plugins	Plugin7Display1	Standard ES radar screen
