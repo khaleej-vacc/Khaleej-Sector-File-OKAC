@@ -41,7 +41,6 @@
           ]
         }
       ],
-
       "BOXIK": [
         {
           "direction": "ODD",
@@ -72,7 +71,7 @@
         },
         {
           "direction": "ODD",
-          "max_fl": 290,
+          "max_fl": 330,
           "destinations": [
             "OTHH"
           ],
@@ -88,7 +87,6 @@
           ]
         }
       ],
-
       "ASVIR": [
         {
           "direction": "ODD",
@@ -107,7 +105,6 @@
           ]
         }
       ],
-
       "ALVAX": [
         {
           "direction": "ODD",
@@ -129,7 +126,6 @@
           ]
         }
       ],
-
       "RALKA": [
         {
           "direction": "EVEN",
@@ -167,7 +163,6 @@
           ]
         }
       ],
-
       "TASMI": [
         {
           "direction": "EVEN",
@@ -205,7 +200,6 @@
           ]
         }
       ],
-
       "DEKOB": [
         {
           "direction": "EVEN",
@@ -226,7 +220,6 @@
           ]
         }
       ],
-
       "NIDAP": [
         {
           "direction": "EVEN",
@@ -258,7 +251,6 @@
           ]
         }
       ],
-
       "KATOD": [
         {
           "direction": "EVEN",
