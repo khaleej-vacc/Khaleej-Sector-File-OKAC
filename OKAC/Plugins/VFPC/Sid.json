@@ -82,8 +82,8 @@
         {
           "direction": "ODD",
           "airways": [
-            "M677",
-            "G669"
+            "B416",
+            "A788"
           ]
         }
       ],
@@ -152,6 +152,18 @@
             "ORNI"
           ],
           "airways": [
+            "L602",
+            "G795"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "max_fl": 160,
+          "destinations": [
+            "ORMM"
+          ],
+          "airways": [
+            "L602",
             "G795"
           ]
         },
@@ -189,6 +201,17 @@
             "ORNI"
           ],
           "airways": [
+            "G795"
+          ]
+        },
+        {
+          "direction": "EVEN",
+          "max_fl": 160,
+          "destinations": [
+            "ORMM"
+          ],
+          "airways": [
+            "L602",
             "G795"
           ]
         },
