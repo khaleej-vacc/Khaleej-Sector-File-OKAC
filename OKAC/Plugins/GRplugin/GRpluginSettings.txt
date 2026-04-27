@@ -62,8 +62,8 @@ RawVideo_MaxHistory=0
 
 Equip_ModeS=WZLCISG
 
-System_State_OnFreq=SBY
-System_State_DeIce=HPO
+System_State_OnFreq=FREQ
+System_State_DeIce=DEICE
 System_State_StartUp=S/U
 System_State_Push=P/S
 System_State_Taxi_Out=T/X
