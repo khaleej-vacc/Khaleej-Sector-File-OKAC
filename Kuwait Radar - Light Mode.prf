@@ -60,6 +60,7 @@ Plugins	Plugin6	\OKAC\Plugins\CDM\CDM.dll
 Plugins	Plugin6Display0	Ground Radar display
 Plugins	Plugin6Display1	Standard ES radar screen
 Plugins	Plugin7	\OKAC\Plugins\AMAN\Aman.dll
+Plugins	Plugin8	\OKAC\Plugins\P21Euroscope.dll
 Plugins	Plugin9	\OKAC\Plugins\VATCAN Bookings\VATCANBookings.dll
 ASRFastKeys	1	\OKAC\ASR\Kuwait FIR.asr
 ASRFastKeys	2	\OKAC\ASR\Kuwait SMGCS.asr
