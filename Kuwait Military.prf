@@ -57,6 +57,7 @@ Plugins	Plugin5	\OKAC\Plugins\vSID\vSID.dll
 Plugins	Plugin5Display0	Ground Radar display
 Plugins	Plugin5Display1	Standard ES radar screen
 Plugins	Plugin8	\OKAC\Plugins\P21Euroscope.dll
+Plugins	Plugin8Display0	Standard ES radar screen
 Plugins	Plugin9	\OKAC\Plugins\VATCAN Bookings\VATCANBookings.dll
 ASRFastKeys	1	\OKAC\ASR\Kuwait FIR.asr
 ASRFastKeys	2	\OKAC\ASR\Al Jaber SMGCS.asr
