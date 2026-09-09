@@ -12,17 +12,15 @@ import shutil
 #   - TopSky Aerodrome  : maps only, built from its own separate
 #                         Maps/Aerodrome/ dataset
 #
-# NOTE ON COLOURS:
-# TopSky and TopSky - Light are identical except for the radar colour
-# definitions. For this to work, the Maps/.Index entry that currently
-# points at the colour file needs to use a {colour} placeholder, e.g.:
-#
-#     Radar/!Colours/{colour}.txt
-#
-# instead of a hardcoded "Radar/!Colours/Realistic.txt". This script
-# fills in {colour} per-variant (Realistic / Light) when it reads the
-# index. If you'd rather not touch the existing .Index, let me know and
-# I can special-case the substitution instead.
+# COLOURS:
+# Maps/.Index lists "!Colours/" as a plain folder entry, and that
+# folder contains both Realistic.txt and Light.txt. Left alone, the
+# compiler would pull in every .txt file under a listed folder — i.e.
+# BOTH colour files — stacking two (sometimes conflicting) sets of
+# COLORDEFs into the output. Instead, whenever the compiler hits a
+# folder named "!Colours" it hardcodes which single file to use, based
+# on the variant's 'colour' setting below ('Realistic' or 'Light').
+# Everything else in that folder is ignored.
 #
 # NOTE ON AERODROME:
 # Currently assumed to only need the Maps step (built from
@@ -35,12 +33,17 @@ import shutil
 SHARED = '.data/TopSky Shared/'
 INDEX  = '.Index'
 
+# The folder name (as it appears in .Index) whose contents should be
+# hardcoded to a single file rather than expanded in full.
+COLOURS_FOLDER_NAME = '!Colours'
+
 # Each variant defines:
 #   name          - label used in log output
 #   output        - destination plugin folder
 #   steps         - which compile steps to run for this variant
-#   template_vars - dict used to fill in {placeholders} inside .Index
-#                   entries (e.g. {colour} -> Radar/!Colours/{colour}.txt)
+#   colour        - 'Realistic' or 'Light' — picks which file inside
+#                   any "!Colours/" folder gets used. Omit/None for
+#                   variants that don't touch that folder.
 #   <step>_source - (optional) override the source folder used for that
 #                   step, relative to SHARED. Defaults to the folder in
 #                   STEP_SOURCE_FOLDERS below.
@@ -49,13 +52,13 @@ VARIANTS = [
         'name': 'TopSky',
         'output': 'OKAC/Plugins/TopSky/',
         'steps': ['areas', 'airspace', 'cpdlc', 'maps', 'msaw', 'radars', 'ssr_codes', 'settings'],
-        'template_vars': {'colour': 'Realistic'},
+        'colour': 'Realistic',
     },
     {
         'name': 'TopSky - Light',
         'output': 'OKAC/Plugins/TopSky - Light/',
         'steps': ['areas', 'airspace', 'cpdlc', 'maps', 'msaw', 'radars', 'ssr_codes', 'settings'],
-        'template_vars': {'colour': 'Light'},
+        'colour': 'Light',
     },
     {
         'name': 'TopSky Aerodrome',
@@ -122,12 +125,17 @@ def build(variant, folder, output_name):
     file for this variant.
     """
     src_folder = SHARED + folder
-    template_vars = variant.get('template_vars', {})
+    colour = variant.get('colour')
 
-    files = get_file_list(src_folder, template_vars)
+    files = get_file_list(src_folder, colour)
     if not files:
         print(f'[SKIP] No files found for {output_name} ({folder})')
         return
+
+    deduped = list(dict.fromkeys(files))
+    if len(deduped) != len(files):
+        print(f'[INFO] Removed {len(files) - len(deduped)} duplicate file reference(s)')
+    files = deduped
 
     dst = variant['output'] + output_name
     os.makedirs(variant['output'], exist_ok=True)
@@ -150,25 +158,24 @@ def build(variant, folder, output_name):
 #
 # Same logic as the ORBB compiler (.Index at any depth is honored,
 # with alphabetical auto-discovery filling in anything not listed),
-# plus {placeholder} substitution on each .Index line so one shared
-# index can serve multiple variants (e.g. colour swapping).
+# plus a hardcoded special case: a folder named "!Colours" is never
+# expanded in full — only <colour>.txt from it is used.
 # ============================================================
 
-def get_file_list(folder_path, template_vars):
-    return collect_txt_files(folder_path, prefix='', template_vars=template_vars)
+def get_file_list(folder_path, colour):
+    return collect_txt_files(folder_path, prefix='', colour=colour)
 
 
-def collect_txt_files(folder_path, prefix='', template_vars=None):
-    template_vars = template_vars or {}
+def collect_txt_files(folder_path, prefix='', colour=None):
     index_path = os.path.join(folder_path, INDEX)
 
     if os.path.exists(index_path):
-        return read_index_with_remainder(folder_path, prefix, index_path, template_vars)
+        return read_index_with_remainder(folder_path, prefix, index_path, colour)
 
-    return auto_discover(folder_path, prefix=prefix, template_vars=template_vars)
+    return auto_discover(folder_path, prefix=prefix, colour=colour)
 
 
-def read_index_with_remainder(folder_path, prefix, index_path, template_vars):
+def read_index_with_remainder(folder_path, prefix, index_path, colour):
     files = []
     covered = set()
     label = prefix.rstrip('/') or '(root)'
@@ -179,21 +186,26 @@ def read_index_with_remainder(folder_path, prefix, index_path, template_vars):
             if not line:
                 continue
 
-            try:
-                line = line.format(**template_vars)
-            except KeyError as e:
-                print(f'[WARN] Unresolved placeholder {e} in "{line}" ({index_path})')
-                continue
-
             if line.endswith('/'):
                 sub_name = line.rstrip('/')
+
+                if sub_name == COLOURS_FOLDER_NAME:
+                    add_colour_file(files, folder_path, prefix, sub_name, colour)
+                    covered.add(sub_name.split('/')[0])
+                    continue
+
                 sub_path = os.path.join(folder_path, sub_name)
                 if not os.path.exists(sub_path):
                     print(f'[WARN] Subfolder not found: {sub_path}')
                     continue
-                sub_files = collect_txt_files(sub_path, prefix=prefix + sub_name + '/', template_vars=template_vars)
+                sub_files = collect_txt_files(sub_path, prefix=prefix + sub_name + '/', colour=colour)
                 files.extend(sub_files)
-                covered.add(sub_name)
+                # Only the top-level segment matters here — collect_remainder()
+                # checks entry.name (immediate child of folder_path) against this
+                # set, so a nested entry like "SID_STAR/33Config" must still mark
+                # "SID_STAR" as covered, or the remainder scan will recurse into
+                # it again and duplicate everything already pulled in above.
+                covered.add(sub_name.split('/')[0])
                 print(f'[INFO] {prefix}{line} expanded to {len(sub_files)} file(s)')
 
             elif '.' in line:
@@ -206,7 +218,7 @@ def read_index_with_remainder(folder_path, prefix, index_path, template_vars):
 
     print(f'[INFO] {label} index supplied {len(files)} entry/entries')
 
-    remainder = collect_remainder(folder_path, covered, prefix, template_vars)
+    remainder = collect_remainder(folder_path, covered, prefix, colour)
     if remainder:
         print(f'[INFO] {label} appending {len(remainder)} unlisted file(s) alphabetically')
         files.extend(remainder)
@@ -215,7 +227,7 @@ def read_index_with_remainder(folder_path, prefix, index_path, template_vars):
     return files
 
 
-def collect_remainder(folder_path, covered, prefix, template_vars):
+def collect_remainder(folder_path, covered, prefix, colour):
     files = []
     try:
         entries = sorted(os.scandir(folder_path), key=lambda e: e.name)
@@ -224,9 +236,13 @@ def collect_remainder(folder_path, covered, prefix, template_vars):
 
     for entry in entries:
         if entry.is_dir() and not entry.name.startswith('.'):
-            if entry.name not in covered:
-                sub_files = collect_txt_files(entry.path, prefix=prefix + entry.name + '/', template_vars=template_vars)
-                files.extend(sub_files)
+            if entry.name in covered:
+                continue
+            if entry.name == COLOURS_FOLDER_NAME:
+                add_colour_file(files, folder_path, prefix, entry.name, colour)
+                continue
+            sub_files = collect_txt_files(entry.path, prefix=prefix + entry.name + '/', colour=colour)
+            files.extend(sub_files)
 
     for entry in entries:
         if entry.is_file() and entry.name.endswith('.txt') and not entry.name.startswith('.'):
@@ -236,8 +252,7 @@ def collect_remainder(folder_path, covered, prefix, template_vars):
     return files
 
 
-def auto_discover(folder_path, prefix='', template_vars=None):
-    template_vars = template_vars or {}
+def auto_discover(folder_path, prefix='', colour=None):
     files = []
     try:
         entries = sorted(os.scandir(folder_path), key=lambda e: e.name)
@@ -247,13 +262,35 @@ def auto_discover(folder_path, prefix='', template_vars=None):
 
     for entry in entries:
         if entry.is_dir() and not entry.name.startswith('.'):
-            files.extend(collect_txt_files(entry.path, prefix=prefix + entry.name + '/', template_vars=template_vars))
+            if entry.name == COLOURS_FOLDER_NAME:
+                add_colour_file(files, folder_path, prefix, entry.name, colour)
+                continue
+            files.extend(collect_txt_files(entry.path, prefix=prefix + entry.name + '/', colour=colour))
 
     for entry in entries:
         if entry.is_file() and entry.name.endswith('.txt') and not entry.name.startswith('.'):
             files.append(prefix + entry.name)
 
     return files
+
+
+def add_colour_file(files, folder_path, prefix, folder_name, colour):
+    """
+    Hardcoded handling for the "!Colours" folder: pick exactly one file
+    (Realistic.txt or Light.txt) instead of including everything inside it.
+    """
+    if not colour:
+        print(f'[WARN] Hit "{folder_name}/" but this variant has no colour set — skipping')
+        return
+
+    filename = f'{colour}.txt'
+    full_path = os.path.join(folder_path, folder_name, filename)
+    if not os.path.exists(full_path):
+        print(f'[WARN] Colour file not found: {full_path}')
+        return
+
+    files.append(f'{prefix}{folder_name}/{filename}')
+    print(f'[INFO] {prefix}{folder_name}/ -> using {filename} only')
 
 
 # ============================================================
