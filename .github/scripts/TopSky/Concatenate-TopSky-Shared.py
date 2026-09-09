@@ -3,34 +3,117 @@ import shutil
 
 # ============================================================
 # OKAC TopSky Data File Compiler
-# Compiles shared data files into the TopSky plugin directory
+# Compiles shared data files into each TopSky plugin variant
+# ============================================================
+#
+# Three plugin variants share most of the same data:
+#   - TopSky            : full compile, Realistic colours
+#   - TopSky - Light     : full compile, Light colours
+#   - TopSky Aerodrome  : maps only, built from its own separate
+#                         Maps/Aerodrome/ dataset
+#
+# COLOURS:
+# Maps/.Index lists "!Colours/" as a plain folder entry, and that
+# folder contains both Realistic.txt and Light.txt. Left alone, the
+# compiler would pull in every .txt file under a listed folder — i.e.
+# BOTH colour files — stacking two (sometimes conflicting) sets of
+# COLORDEFs into the output. Instead, whenever the compiler hits a
+# folder named "!Colours" it hardcodes which single file to use, based
+# on the variant's 'colour' setting below ('Realistic' or 'Light').
+# Everything else in that folder is ignored.
+#
+# NOTE ON AERODROME:
+# Currently assumed to only need the Maps step (built from
+# Maps/Aerodrome/.Index rather than the normal Maps/.Index) plus the
+# single-file ICAO data copies. Add step names to its 'steps' list
+# below if it also needs Areas/Airspace/CPDLC/MSAW/Radars/SSRcodes/
+# Settings.
 # ============================================================
 
-OUTPUTS = [
-    'OKAC/Plugins/TopSky/',
-    # 'OKAC/Plugins/TopSky2/',  # Add more output paths here
-]
 SHARED = '.data/TopSky Shared/'
 INDEX  = '.Index'
 
+# The folder name (as it appears in .Index) whose contents should be
+# hardcoded to a single file rather than expanded in full.
+COLOURS_FOLDER_NAME = '!Colours'
+
+# Folder names that live inside a compiled tree but must NEVER be pulled
+# in automatically (via remainder/auto-discovery) — only ever touched
+# when explicitly targeted (e.g. Aerodrome's own 'maps_source' step).
+# Without this, an unlisted folder like "Aerodrome" sitting inside
+# Maps/ gets silently swept into the normal TopSky/TopSky - Light Maps
+# build too, which is how its Colour Definitions.txt ended up
+# overwriting the correct Realistic/Light colours.
+EXCLUDED_FOLDER_NAMES = {'Aerodrome'}
+
+# Each variant defines:
+#   name          - label used in log output
+#   output        - destination plugin folder
+#   steps         - which compile steps to run for this variant
+#   colour        - 'Realistic' or 'Light' — picks which file inside
+#                   any "!Colours/" folder gets used. Omit/None for
+#                   variants that don't touch that folder.
+#   <step>_source - (optional) override the source folder used for that
+#                   step, relative to SHARED. Defaults to the folder in
+#                   STEP_SOURCE_FOLDERS below.
+VARIANTS = [
+    {
+        'name': 'TopSky',
+        'output': 'OKAC/Plugins/TopSky/',
+        'steps': ['areas', 'airspace', 'cpdlc', 'maps', 'msaw', 'radars', 'ssr_codes', 'settings'],
+        'colour': 'Realistic',
+    },
+    {
+        'name': 'TopSky - Light',
+        'output': 'OKAC/Plugins/TopSky - Light/',
+        'steps': ['areas', 'airspace', 'cpdlc', 'maps', 'msaw', 'radars', 'ssr_codes', 'settings'],
+        'colour': 'Light',
+    },
+    {
+        'name': 'TopSky Aerodrome',
+        'output': 'OKAC/Plugins/TopSky Aerodrome/',
+        'steps': ['maps'],
+        'maps_source': 'Maps/Aerodrome/',
+    },
+]
+
+STEP_OUTPUT_NAMES = {
+    'areas':     'TopSkyAreas.txt',
+    'airspace':  'TopSkyAirspace.txt',
+    'cpdlc':     'TopSkyCPDLC.txt',
+    'maps':      'TopSkyMaps.txt',
+    'msaw':      'TopSkyMSAW.txt',
+    'radars':    'TopSkyRadars.txt',
+    'ssr_codes': 'TopSkySSRcodes.txt',
+    'settings':  'TopSkySettings.txt',
+}
+
+STEP_SOURCE_FOLDERS = {
+    'areas':     'Areas/',
+    'airspace':  'Airspace/',
+    'cpdlc':     'CPDLC/',
+    'maps':      'Maps/',
+    'msaw':      'MSAW/',
+    'radars':    'Radars/',
+    'ssr_codes': 'SSRcodes/',
+    'settings':  'Settings/',
+}
+
 
 def main():
-    copy_single_files()
-    compile_areas()
-    compile_airspace()
-    compile_cpdlc()
-    compile_maps()
-    compile_msaw()
-    compile_radars()
-    compile_ssr_codes()
-    compile_settings()
+    for variant in VARIANTS:
+        print(f"\n=== Building {variant['name']} -> {variant['output']} ===")
+        copy_single_files(variant)
+        for step in variant['steps']:
+            folder = variant.get(f'{step}_source', STEP_SOURCE_FOLDERS[step])
+            build(variant, folder, STEP_OUTPUT_NAMES[step])
 
 
 # ============================================================
 # Single-file copies (no compilation needed)
 # ============================================================
 
-def copy_single_files():
+def copy_single_files(variant):
     singles = {
         'DataFiles/ICAO_Aircraft.json':  'ICAO_Aircraft.json',
         'DataFiles/ICAO_Aircraft.txt':   'ICAO_Aircraft.txt',
@@ -38,65 +121,35 @@ def copy_single_files():
         'DataFiles/ICAO_Airports.txt':   'ICAO_Airports.txt',
     }
     for src, dst in singles.items():
-        for output in OUTPUTS:
-            copy_file(SHARED + src, output + dst)
-
-
-# ============================================================
-# Compiled outputs
-# ============================================================
-
-def compile_areas():
-    build('Areas/', 'TopSkyAreas.txt')
-
-def compile_airspace():
-    build('Airspace/', 'TopSkyAirspace.txt')
-
-def compile_cpdlc():
-    build('CPDLC/', 'TopSkyCPDLC.txt')
-
-def compile_maps():
-    build('Maps/', 'TopSkyMaps.txt')
-
-def compile_msaw():
-    build('MSAW/', 'TopSkyMSAW.txt')
-
-def compile_radars():
-    build('Radars/', 'TopSkyRadars.txt')
-
-def compile_ssr_codes():
-    build('SSRcodes/', 'TopSkySSRcodes.txt')
-
-def compile_settings():
-    build('Settings/', 'TopSkySettings.txt')
+        copy_file(SHARED + src, variant['output'] + dst)
 
 
 # ============================================================
 # Core build logic
 # ============================================================
 
-def build(folder, output_name):
+def build(variant, folder, output_name):
     """
-    Compiles all .txt files in a shared folder into a single output file,
-    then copies the result to all output directories.
-
-    Ordering:
-      1. Entries listed in .Index.txt, in order (files and/or subfolders)
-      2. Any remaining .txt files or subfolders not already included,
-         discovered alphabetically (subdirs first, then loose root files)
+    Compiles all .txt files in a shared folder into a single output
+    file for this variant.
     """
     src_folder = SHARED + folder
+    colour = variant.get('colour')
 
-    files = get_file_list(src_folder, folder)
+    files = get_file_list(src_folder, colour)
     if not files:
-        print(f'[SKIP] No files found for {output_name}')
+        print(f'[SKIP] No files found for {output_name} ({folder})')
         return
 
-    # Build into the first output, then copy to the rest
-    primary = OUTPUTS[0] + output_name
-    os.makedirs(OUTPUTS[0], exist_ok=True)
+    deduped = list(dict.fromkeys(files))
+    if len(deduped) != len(files):
+        print(f'[INFO] Removed {len(files) - len(deduped)} duplicate file reference(s)')
+    files = deduped
 
-    with open(primary, 'wb') as out:
+    dst = variant['output'] + output_name
+    os.makedirs(variant['output'], exist_ok=True)
+
+    with open(dst, 'wb') as out:
         for relative_path in files:
             full_path = src_folder + relative_path
             if not os.path.exists(full_path):
@@ -106,124 +159,134 @@ def build(folder, output_name):
                 shutil.copyfileobj(f, out)
                 out.write(b'\n\n')
 
-    print(f'[OK]   Built {primary} from {len(files)} file(s)')
-
-    for output in OUTPUTS[1:]:
-        os.makedirs(output, exist_ok=True)
-        dst = output + output_name
-        shutil.copy(primary, dst)
-        print(f'[OK]   Copied to {dst}')
+    print(f'[OK]   Built {dst} from {len(files)} file(s)')
 
 
 # ============================================================
 # File ordering
+#
+# Same logic as the ORBB compiler (.Index at any depth is honored,
+# with alphabetical auto-discovery filling in anything not listed),
+# plus a hardcoded special case: a folder named "!Colours" is never
+# expanded in full — only <colour>.txt from it is used.
 # ============================================================
 
-def get_file_list(folder_path, folder_label):
-    """
-    Returns an ordered list of relative file paths to compile.
+def get_file_list(folder_path, colour):
+    return collect_txt_files(folder_path, prefix='', colour=colour)
 
-    If .Index.txt exists:
-      - Process all index entries first (in listed order)
-        Supports:
-          - Specific files:   CategoryDefinitions/CategoryDefs.txt
-          - Whole subfolders: Prohibited/
-        Files within a subfolder entry are sorted alphabetically,
-        including files in any nested subdirectories.
-      - Then append any .txt files or subdirectories not already
-        covered by the index, in alphabetical order.
 
-    If no .Index.txt:
-      - Auto-discover everything alphabetically (subdirs first,
-        then loose root .txt files).
-    """
-    index_path = folder_path + INDEX
+def collect_txt_files(folder_path, prefix='', colour=None):
+    index_path = os.path.join(folder_path, INDEX)
 
     if os.path.exists(index_path):
-        return read_index_with_remainder(index_path, folder_label, folder_path)
+        return read_index_with_remainder(folder_path, prefix, index_path, colour)
 
-    return auto_discover(folder_path)
+    return auto_discover(folder_path, prefix=prefix, colour=colour)
 
 
-def read_index_with_remainder(index_path, folder_label, folder_path):
-    """
-    Reads .Index.txt entries first, then appends any files/folders
-    not already covered, discovered alphabetically.
-    """
+def read_index_with_remainder(folder_path, prefix, index_path, colour):
     files = []
-    # Track which top-level names (files or folder prefixes) are already
-    # covered so we can skip them in the remainder pass.
     covered = set()
+    label = prefix.rstrip('/') or '(root)'
 
     with open(index_path, 'r') as f:
         for raw_line in f:
-            line = raw_line.split('//')[0].strip()  # strip comments
+            line = raw_line.split('//')[0].strip()
             if not line:
                 continue
 
             if line.endswith('/'):
-                # Whole subfolder — discover all .txt files recursively,
-                # sorted alphabetically at each level
-                sub_path = folder_path + line
+                sub_name = line.rstrip('/')
+
+                if sub_name in EXCLUDED_FOLDER_NAMES:
+                    print(f'[WARN] "{line}" in {index_path} points at an excluded folder — skipping')
+                    covered.add(sub_name.split('/')[0])
+                    continue
+
+                if sub_name == COLOURS_FOLDER_NAME:
+                    add_colour_file(files, folder_path, prefix, sub_name, colour)
+                    covered.add(sub_name.split('/')[0])
+                    continue
+
+                sub_path = os.path.join(folder_path, sub_name)
                 if not os.path.exists(sub_path):
                     print(f'[WARN] Subfolder not found: {sub_path}')
                     continue
-                sub_files = collect_txt_files(sub_path, prefix=line)
+                sub_files = collect_txt_files(sub_path, prefix=prefix + sub_name + '/', colour=colour)
                 files.extend(sub_files)
-                # Mark the top-level subfolder name as covered
-                covered.add(line.rstrip('/'))
-                print(f'[INFO] {line} expanded to {len(sub_files)} file(s)')
+                # Only the top-level segment matters here — collect_remainder()
+                # checks entry.name (immediate child of folder_path) against this
+                # set, so a nested entry like "SID_STAR/33Config" must still mark
+                # "SID_STAR" as covered, or the remainder scan will recurse into
+                # it again and duplicate everything already pulled in above.
+                covered.add(sub_name.split('/')[0])
+                print(f'[INFO] {prefix}{line} expanded to {len(sub_files)} file(s)')
 
             elif '.' in line:
-                # Specific file
-                files.append(line)
-                # Mark the top-level component as covered (could be
-                # "SubFolder/file.txt" → covers "SubFolder" prefix, or
-                # a loose "file.txt" at the root)
+                files.append(prefix + line)
                 top = line.split('/')[0]
                 covered.add(top)
 
             else:
                 print(f'[WARN] Skipped index entry (no extension or /): "{line}" in {index_path}')
 
-    print(f'[INFO] {folder_label} index supplied {len(files)} entry/entries')
+    print(f'[INFO] {label} index supplied {len(files)} entry/entries')
 
-    # ----------------------------------------------------------
-    # Remainder pass: pick up anything not already covered
-    # ----------------------------------------------------------
-    remainder = collect_remainder(folder_path, covered)
+    remainder = collect_remainder(folder_path, covered, prefix, colour)
     if remainder:
-        print(f'[INFO] {folder_label} appending {len(remainder)} unlisted file(s) alphabetically')
+        print(f'[INFO] {label} appending {len(remainder)} unlisted file(s) alphabetically')
         files.extend(remainder)
 
-    print(f'[INFO] {folder_label} total: {len(files)} file(s)')
+    print(f'[INFO] {label} total: {len(files)} file(s)')
     return files
 
 
-def collect_txt_files(folder_path, prefix=''):
-    """
-    Recursively collects all .txt files under folder_path,
-    sorted alphabetically at each directory level.
-    Returns paths relative to the parent of folder_path,
-    prefixed with `prefix`.
-
-    Order: subdirectories (depth-first, sorted) then loose files (sorted).
-    """
+def collect_remainder(folder_path, covered, prefix, colour):
     files = []
+    try:
+        entries = sorted(os.scandir(folder_path), key=lambda e: e.name)
+    except FileNotFoundError:
+        return files
 
+    for entry in entries:
+        if entry.is_dir() and not entry.name.startswith('.'):
+            if entry.name in covered:
+                continue
+            if entry.name in EXCLUDED_FOLDER_NAMES:
+                print(f'[INFO] {prefix}{entry.name}/ skipped (excluded folder)')
+                continue
+            if entry.name == COLOURS_FOLDER_NAME:
+                add_colour_file(files, folder_path, prefix, entry.name, colour)
+                continue
+            sub_files = collect_txt_files(entry.path, prefix=prefix + entry.name + '/', colour=colour)
+            files.extend(sub_files)
+
+    for entry in entries:
+        if entry.is_file() and entry.name.endswith('.txt') and not entry.name.startswith('.'):
+            if entry.name not in covered:
+                files.append(prefix + entry.name)
+
+    return files
+
+
+def auto_discover(folder_path, prefix='', colour=None):
+    files = []
     try:
         entries = sorted(os.scandir(folder_path), key=lambda e: e.name)
     except FileNotFoundError:
         print(f'[WARN] Folder not found: {folder_path}')
         return files
 
-    # Subdirs first (depth-first)
     for entry in entries:
         if entry.is_dir() and not entry.name.startswith('.'):
-            sub_prefix = prefix + entry.name + '/'
-            files.extend(collect_txt_files(entry.path, prefix=sub_prefix))
+            if entry.name in EXCLUDED_FOLDER_NAMES:
+                print(f'[INFO] {prefix}{entry.name}/ skipped (excluded folder)')
+                continue
+            if entry.name == COLOURS_FOLDER_NAME:
+                add_colour_file(files, folder_path, prefix, entry.name, colour)
+                continue
+            files.extend(collect_txt_files(entry.path, prefix=prefix + entry.name + '/', colour=colour))
 
-    # Then loose .txt files (skip dotfiles like .Index.txt)
     for entry in entries:
         if entry.is_file() and entry.name.endswith('.txt') and not entry.name.startswith('.'):
             files.append(prefix + entry.name)
@@ -231,45 +294,23 @@ def collect_txt_files(folder_path, prefix=''):
     return files
 
 
-def collect_remainder(folder_path, covered):
+def add_colour_file(files, folder_path, prefix, folder_name, colour):
     """
-    Returns all .txt files (recursively) under folder_path that are NOT
-    already covered by the index, in alphabetical order.
-
-    A path is considered covered if its top-level component (file or
-    folder name) appears in the `covered` set.
+    Hardcoded handling for the "!Colours" folder: pick exactly one file
+    (Realistic.txt or Light.txt) instead of including everything inside it.
     """
-    files = []
+    if not colour:
+        print(f'[WARN] Hit "{folder_name}/" but this variant has no colour set — skipping')
+        return
 
-    try:
-        entries = sorted(os.scandir(folder_path), key=lambda e: e.name)
-    except FileNotFoundError:
-        return files
+    filename = f'{colour}.txt'
+    full_path = os.path.join(folder_path, folder_name, filename)
+    if not os.path.exists(full_path):
+        print(f'[WARN] Colour file not found: {full_path}')
+        return
 
-    # Subdirs not covered
-    for entry in entries:
-        if entry.is_dir() and not entry.name.startswith('.'):
-            if entry.name not in covered:
-                sub_files = collect_txt_files(entry.path, prefix=entry.name + '/')
-                files.extend(sub_files)
-
-    # Loose root .txt files not covered (skip dotfiles like .Index.txt)
-    for entry in entries:
-        if entry.is_file() and entry.name.endswith('.txt') and not entry.name.startswith('.'):
-            if entry.name not in covered:
-                files.append(entry.name)
-
-    return files
-
-
-def auto_discover(folder_path):
-    """
-    Walks the folder structure recursively when no .Index.txt exists:
-      - Subdirectories (depth-first, sorted alphabetically at each level)
-      - .txt files within each level, sorted alphabetically
-      - Then any loose .txt files at the root, sorted alphabetically
-    """
-    return collect_txt_files(folder_path, prefix='')
+    files.append(f'{prefix}{folder_name}/{filename}')
+    print(f'[INFO] {prefix}{folder_name}/ -> using {filename} only')
 
 
 # ============================================================
