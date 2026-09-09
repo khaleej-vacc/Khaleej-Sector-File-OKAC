@@ -37,6 +37,15 @@ INDEX  = '.Index'
 # hardcoded to a single file rather than expanded in full.
 COLOURS_FOLDER_NAME = '!Colours'
 
+# Folder names that live inside a compiled tree but must NEVER be pulled
+# in automatically (via remainder/auto-discovery) — only ever touched
+# when explicitly targeted (e.g. Aerodrome's own 'maps_source' step).
+# Without this, an unlisted folder like "Aerodrome" sitting inside
+# Maps/ gets silently swept into the normal TopSky/TopSky - Light Maps
+# build too, which is how its Colour Definitions.txt ended up
+# overwriting the correct Realistic/Light colours.
+EXCLUDED_FOLDER_NAMES = {'Aerodrome'}
+
 # Each variant defines:
 #   name          - label used in log output
 #   output        - destination plugin folder
@@ -189,6 +198,11 @@ def read_index_with_remainder(folder_path, prefix, index_path, colour):
             if line.endswith('/'):
                 sub_name = line.rstrip('/')
 
+                if sub_name in EXCLUDED_FOLDER_NAMES:
+                    print(f'[WARN] "{line}" in {index_path} points at an excluded folder — skipping')
+                    covered.add(sub_name.split('/')[0])
+                    continue
+
                 if sub_name == COLOURS_FOLDER_NAME:
                     add_colour_file(files, folder_path, prefix, sub_name, colour)
                     covered.add(sub_name.split('/')[0])
@@ -238,6 +252,9 @@ def collect_remainder(folder_path, covered, prefix, colour):
         if entry.is_dir() and not entry.name.startswith('.'):
             if entry.name in covered:
                 continue
+            if entry.name in EXCLUDED_FOLDER_NAMES:
+                print(f'[INFO] {prefix}{entry.name}/ skipped (excluded folder)')
+                continue
             if entry.name == COLOURS_FOLDER_NAME:
                 add_colour_file(files, folder_path, prefix, entry.name, colour)
                 continue
@@ -262,6 +279,9 @@ def auto_discover(folder_path, prefix='', colour=None):
 
     for entry in entries:
         if entry.is_dir() and not entry.name.startswith('.'):
+            if entry.name in EXCLUDED_FOLDER_NAMES:
+                print(f'[INFO] {prefix}{entry.name}/ skipped (excluded folder)')
+                continue
             if entry.name == COLOURS_FOLDER_NAME:
                 add_colour_file(files, folder_path, prefix, entry.name, colour)
                 continue
